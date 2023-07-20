@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/src/constants/sizes.dart';
-import 'package:portfolio/src/features/experience/domain/experience.dart';
 import 'package:portfolio/src/common_widgets/link.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
+import 'package:portfolio/src/constants/sizes.dart';
+import 'package:portfolio/src/features/experience/domain/experience.dart';
 
 class ExperienceCard extends ConsumerWidget {
   const ExperienceCard({super.key, required this.experience});
@@ -73,9 +74,8 @@ class ExperienceCard extends ConsumerWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(
-                        experience.description,
-                        style: Theme.of(context).textTheme.bodyMedium,
+                      child: Html(
+                        data: experience.description,
                       ),
                     ),
                   ],
