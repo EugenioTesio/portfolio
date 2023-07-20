@@ -1,5 +1,5 @@
 {
-  "name": "Aladdine Abdou",
+  "name": "Eugenio Tesio",
   "@name": {
     "description": "My name"
   },
@@ -43,15 +43,15 @@
   "@resumePresent": {
     "description": "Current job or education"
   },
-  "description": "Software Imagineer",
+  "description": "Passionate Software Developer",
   "@description": {
     "description": "My description"
   },
-  "subDescription": "Flutter Enthusiast",
+  "subDescription": "Senior Flutter and Python Enthusiast",
   "@subDescription": {
     "description": "My sub description"
   },
-  "about": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.",
+  "about": "Hello! I'm Eugenio Tesio, highly experienced Flutter Developer with 5+ year's expertise in designing and developing comprehensive applications using Java, Spring Boot, Python, and the Flutter framework. Skilled in leveraging powerful architecture patterns to create impressive software products that meet customer needs",
   "@about": {
     "description": "My introduction"
   },
@@ -101,10 +101,50 @@
   },
   "gsbRvDr": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
   "@gsbRvDr": {
-  "description": "Description of the GSB-RV-DR project"
+    "description": "Description of the GSB-RV-DR project"
   },
   "credit": "Design inspired by",
   "@credit": {
-  "description": "Credit to"
+    "description": "Credit to"
+  },
+  "pairtreeDevJobTitle": "Full Stack Developer",
+  "@pairtreeDevJobTitle": {
+    "description": "Developer job title at Pairtree"
+  },
+  "pairtreeDevJobDescription": "<ul> <li>Developed applications using Flutter and BLoC architecture.</li> <li>Used GitHub Actions for testing and deployment.</li> <li>Performed unit, widget, and integration testing.</li> <li>Implemented golden testing for UI development.</li> <li>Assisted in Python backend development using FastAPI.</li> <li>Utilized SQLAlchemy and Alembic migrations for database operations.</li> <li>Achieved 100% code coverage for all tests in Python Backend.</li> <li>Utilized fixtures to create test data for functional and regression tests.</li> <li>Modified existing test cases to improve coverage and accuracy.</li> <li>Worked with developers to troubleshoot and resolve software issues.</li> <li>Developed and improved CI/CD pipelines.</li> <li>Identified and tracked issues with Sentry.</li> </ul>",
+  "@pairtreeDevJobDescription": {
+    "description": "Developer job description at Pairtree"
+  },
+  "tandamosDevJobTitle": "Full Stack Developer",
+  "@tandamosDevJobTitle": {
+    "description": "Developer job title at Tandamos"
+  },
+  "tandamosDevJobDescription": "<ul> <li>Developed a customer-facing mobile application using Flutter.</li> <li>Enhanced existing backend services built with Next.js using TypeScript.</li> <li>Developed a TypeORM framework to manage data access from a MySQL database.</li> <li>Utilized the Riverpod state management library to store and manage application state.</li> <li>Developed custom reusable UI components using Flutter.</li> <li>Developed automated unit, widget, and integration tests to ensure application stability.</li> <li>Developed reusable functions in Node.js to reduce code redundancy.</li> <li>Utilized Firebase for authentication, authorization, and data synchronization.</li> </ul>",
+  "@tandamosDevJobDescription": {
+    "description": "Developer job description at Tandamos"
+  },
+  "valtechDevJobTitle": "Backend Developer",
+  "@valtechDevJobTitle": {
+    "description": "Developer job title at Valtech"
+  },
+  "valtechDevJobDescription": "<ul> <li>Developed a Java Spring Boot app that allowed other internal services to send emails using Google Pub/Sub</li> <li>The service used Oracle Responsys to enable the delivery of emails Improved reliability and scalability of the email delivery system.</li> <li>Created unit and integration tests to ensure the app met the requirements.</li> <li>Investigated and resolved any bugs or errors encountered</li> <li>Developed RESTful APIs to enable the app to communicate with other services.</li> <li>Collaborated with other developers and stakeholders to ensure success.</li> <li>Managed the development of the app through its full life cycle.</li> <li>Identified and deployed new tools to improve the app functionality.</li> <li>Resolved conflicts between the app and third-party services.</li> </ul>",
+  "@valtechDevJobDescription": {
+    "description": "Developer job description at Valtech"
+  },
+  "freelanceDevJobTitle": "Full Stack Developer",
+  "@freelanceDevJobTitle": {
+    "description": "Developer job title at Freelance"
+  },
+  "freelanceDevJobDescription": "<ul> <li> <p>Worked on web and mobile applications using Flutter&nbsp;with State Management such as Provider, BloC, Riverpod, GetX. Unit Test, Widget test, Golden test, and integration test.</p> </li> <li>Developed software applications with Java using SpringBoot implementing Spring Web, Hibernate, Spring Data JPA, Spring Security, OAuth2 Client, Spring JDBC, Spring. Data MongoDB, WebSockets, Spring Messaging, Scheduler, Spring Cache, Spring Boot Actuator, Swagger, GCP Storage, and GCP Messaging.</li> <li>Developed Python back-end components using Flask or FastAPI, WebSockets, SqlAlchemy, and REST API with Asyncio coroutine manager, Base Model (pydantic)</li> <li>Developed automatic&nbsp;database migration in Python backends&nbsp;with Alembic from SqlAlchemy.</li> <li>Deployed mobile applications in Google PlayStore and AppStore without being rejected.</li> <li>Performed DevOps operations in Google Cloud such as CI/CD using Cloud Run, Cloud App Engine Flexible Environment, Cloud Build, Cloud Artifacts</li> <li>Worked on modularization, creating multiple packages.</li> <li>Worked with Firebase as a back-end platform, and with Google and Facebook for authentication</li> <li>Worked with Firestore NoSQL database, Google Storage, Google Functions, Google Pub/Sub, and Remote Config.</li> <li>Performed Firebase full-text search Elastic Search.</li> <li>Used Google Analytics, Crashlytics, and Sentry for bugs and metrics follow-up.</li> <li>Worked with OCPP 1.6 (Open Charge Point Protocol), the vehicle electrical charger connection protocol.</li> <li>Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors.</li> <li>Discussed project progress with customers, collected feedback on different stages, and directly addressed concerns.</li> <li>Gathered and defined customer requirements to develop clear specifications for project plans</li> <li>Orchestrated efficient large-scale software deployments, including testing features and correcting code.</li> <li>Designed and documented systems based on the results of the analysis.</li> <li>Developed databases, programs, and processes for integration and implementation across the enterprise.</li> <li>Trained new developers and programmers on company standards for design and review.</li> <li>Reviewed user requirements, analyzed, designed, implemented, installed, and delivered training for new applications.</li> </ul>",
+  "@freelanceDevJobDescription": {
+    "description": "Developer job description at Freelance"
+  },
+  "vulleticProjectDescriptionHtml": "<p><span style=\"font-size:22px\">Project: Vulletic</span><br /> <span style=\"font-size:14px\">Electric Vehicle charger platform</span></p> <hr /> <ul> <li>Orchested&nbsp;the system architecture using Flutter for Mobile App, Nuxt for Admin Page, Python for the backend, Firebase for Auth, Firestore as NoSQL database, and Google Cloud for the cloud infrastructure.</li> <li>Developed the Flutter App using GetX as a state management solution.</li> <li>Developed automated unit, widget, and integration tests to ensure application stability.</li> <li>Developed custom reusable UI components.</li> <li>Developed the Python Backend using FastApi and WebSockets to communicate with OCPP 1.6 protocol.</li> <li>Deployed all the apps with CI/CD pipeline with Google Cloud Build.</li> </ul> <hr /> <p>Solution Web site:&nbsp;<a href=\"https://vulletic.com.ar/software-app\">https://vulletic.com.ar/software-app</a></p> <p>Google Play:&nbsp;<a href=\"https://play.google.com/store/apps/details?id=ar.com.vulletic.ecp_flutter\">https://play.google.com/store/apps/details?id=ar.com.vulletic.ecp_flutter</a></p>",
+  "@vulleticProjectDescription": {
+    "description": "Vulletic project description"
+  },
+  "collectioProjectDescriptionHtml": "<p><span style=\"font-size:22px\">Project: Collect.io</span><br /> <span style=\"font-size:14px\">Automatic invoices</span>&nbsp;deliver for monthly memberships which were manually collected</p> <hr /> <ul> <li>Utilized&nbsp;Firebase for authorization, Firestore for database, and Firebase Storage for storing files.</li> <li>Developed the Flutter App using GetX as a state management solution.</li> <li>Developed custom reusable UI components.</li> <li>Developed automated unit, widget, and integration tests to ensure application stability.</li> <li>Deployed all the apps with CI/CD pipeline with Google Cloud Build.</li> </ul> <hr /> <p>Google Play:&nbsp;<a href=\"https://play.google.com/store/apps/details?id=ar.com.zetus.collectio\">https://play.google.com/store/apps/details?id=ar.com.zetus.collectio</a></p>",
+  "@collectioProjectDescription": {
+    "description": "Collect.io project description"
   }
 }
