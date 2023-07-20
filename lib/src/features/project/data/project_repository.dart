@@ -1,5 +1,5 @@
-import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -21,56 +21,49 @@ class ProjectRepository {
       Project(
         title: "Portfolio",
         description: _appLocalizations.portfolioDescription,
-        technologies: ["Flutter", "Dart", "Firebase"],
+        technologies: [
+          "Flutter",
+          "Dart",
+        ],
         url: "https://github.com/Aaldn/portfolio#readme",
-        photoUrl:
+        asset:
             "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
       ),
       Project(
-        title: "Learn Flow API",
-        description: _appLocalizations.learnFlowApiDescription,
+        title: "Vulletic Electrical Vehicle Charger Solution",
+        description: _appLocalizations.vulleticProjectDescription,
         technologies: [
-          "Node.js",
-          "Express",
-          "TypeScript",
-          "MongoDB",
-          "Docker",
+          "Flutter",
+          "GetX",
+          "Python",
+          "FastApi",
+          "Nuxt",
+          "Firebase Auth",
+          "Firestore",
+          "Firebase Emulators",
+          "Crashlytics",
+          "Google Cloud Engine",
+          "Google Cloud Build",
+          "Git",
         ],
-        url: "https://github.com/Aaldn/learnflow-api/tree/development#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/learnflow-api/main/src/public/screenshots/screenshot.png",
+        url: "https://vulletic.com.ar/software-app/",
+        asset: "assets/projects/vulletic.png",
       ),
       Project(
-        title: "Learn Flow Backoffice",
-        description: _appLocalizations.learnFlowBackOfficeDescription,
-        technologies: ["Flutter", "Dart"],
-        url: "https://github.com/Aaldn/learnflow_backoffice/tree/development",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/learnflow_backoffice/main/assets/screenshots/screenshot_login.png",
-      ),
-      Project(
-        title: "GSB-Frais",
-        description: _appLocalizations.gsbFraisDescription,
-        technologies: ["Symfony", "PHP", "Bootstrap", "MariaDB", "Apache"],
-        url: "https://github.com/Aaldn/GSB-Frais#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-Frais/master/screenshots/visiteur/0-Second%20Screenshot%20README.png",
-      ),
-      Project(
-        title: "GSB-RV-Visiteur-Serveur",
-        description: _appLocalizations.gsbRvVisiteurServeurDescription,
-        technologies: ["Flask", "Python", "MariaDB", "Docker"],
-        url: "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-RV-Visiteur-Serveur/master/screenshots/RESTClient.png",
-      ),
-      Project(
-        title: "GSB-RV-DR",
-        description: _appLocalizations.gsbRvDr,
-        technologies: ["JavaFX", "Java", "MariaDB"],
-        url: "https://github.com/Aaldn/GSB-RV-DR#readme",
-        photoUrl:
-            "https://raw.githubusercontent.com/Aaldn/GSB-RV-DR/master/screenshots/9-Consultation%20D%C3%A9taill%C3%A9e%20Rapport.png",
+        title: "Collect.io",
+        description: _appLocalizations.collectioProjectDescriptionHtml,
+        technologies: [
+          "Flutter",
+          "GetX",
+          "Firebase Auth",
+          "Firestore",
+          "Firebase Emulators",
+          "Crashlytics",
+          "Git",
+        ],
+        url:
+            "https://play.google.com/store/apps/details?id=ar.com.zetus.collectio",
+        asset: "assets/projects/collectio.png",
       ),
     ];
   }

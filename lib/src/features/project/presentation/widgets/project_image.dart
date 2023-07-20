@@ -58,18 +58,10 @@ class ProjectImage extends ConsumerWidget {
                         ..scale(1.2)
                         ..translate(0.5 * -width, 0.5 * -width))
                       : Matrix4.identity(),
-                  child: Image.network(
-                    project.photoUrl,
+                  child: Image.asset(
+                    project.asset,
                     fit: BoxFit.cover,
                     cacheWidth: 1920,
-                    loadingBuilder: (context, child, loadingProgress) {
-                      if (loadingProgress != null) {
-                        return const Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return child;
-                    },
                   ),
                 );
               },

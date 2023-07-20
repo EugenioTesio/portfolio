@@ -1,15 +1,15 @@
 class Project {
   final String title;
   final String description;
-  final List<String>? technologies;
   final String url;
-  final String photoUrl;
+  final String asset;
+  final List<String>? technologies;
 
   const Project({
     required this.title,
     required this.description,
-    this.technologies,
     required this.url,
-    required this.photoUrl,
+    required this.asset,
+    this.technologies,
   });
 }
