@@ -78,7 +78,7 @@ class ExperienceRepository {
         startDate: "Apr. 2011",
         endDate: "Aug. 2021",
         job: _appLocalizations.freelanceDevJobTitle,
-        company: "Tandamos",
+        company: "Freelance",
         description: _appLocalizations.freelanceDevJobDescription,
         technologies: [
           "Flutter",
