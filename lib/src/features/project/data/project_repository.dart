@@ -26,8 +26,7 @@ class ProjectRepository {
           "Dart",
         ],
         url: "https://github.com/Aaldn/portfolio#readme",
-        asset:
-            "https://raw.githubusercontent.com/Aaldn/portfolio/main/assets/screenshots/web-light.png",
+        asset: "assets/projects/vulletic.png",
       ),
       Project(
         title: "Vulletic Electrical Vehicle Charger Solution",
