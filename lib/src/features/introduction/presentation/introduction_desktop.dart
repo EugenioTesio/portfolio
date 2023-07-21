@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/introduction/data/contact_repository.dart';
 import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
@@ -30,16 +31,20 @@ class IntroductionDesktop extends ConsumerWidget {
           ],
         ),
         gapH4,
-        Text(
+        AppText(
           context.localized.name,
           style: Theme.of(context).textTheme.displayLarge,
+          type: AppTextType.autosize,
+          maxLines: 1,
         ),
         gapH4,
         Wrap(
           children: [
-            Text(
+            AppText(
               "${context.localized.description} ",
               style: Theme.of(context).textTheme.titleLarge,
+              type: AppTextType.autosize,
+              maxLines: 1,
             ),
             const MagicIcon(),
           ],
@@ -47,7 +52,7 @@ class IntroductionDesktop extends ConsumerWidget {
         gapH8,
         Wrap(
           children: [
-            Text(
+            AppText(
               "${context.localized.subDescription} ",
               style: Theme.of(context).textTheme.bodyLarge,
             ),
