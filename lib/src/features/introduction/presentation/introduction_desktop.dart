@@ -6,6 +6,7 @@ import 'package:portfolio/src/features/introduction/data/resume_repository.dart'
 import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
+import 'package:portfolio/src/features/introduction/presentation/widgets/profile_image.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
 
@@ -15,17 +16,26 @@ class IntroductionDesktop extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final contacts = ref.read(contactRepositoryProvider).fetchContacts();
+    final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Wrap(
+          children: [
+            ProfileImage(
+              asset: 'assets/images/profile-image-2-without-bg.png',
+              size: 340,
+            ),
+          ],
+        ),
+        gapH4,
         Text(
           context.localized.name,
           style: Theme.of(context).textTheme.displayLarge,
         ),
         gapH4,
-        Row(
-          mainAxisSize: MainAxisSize.min,
+        Wrap(
           children: [
             Text(
               "${context.localized.description} ",
@@ -35,8 +45,7 @@ class IntroductionDesktop extends ConsumerWidget {
           ],
         ),
         gapH8,
-        Row(
-          mainAxisSize: MainAxisSize.min,
+        Wrap(
           children: [
             Text(
               "${context.localized.subDescription} ",
@@ -45,24 +54,19 @@ class IntroductionDesktop extends ConsumerWidget {
             const FavoriteIcon(),
           ],
         ),
-        _buildResumeButton(ref),
-        const Spacer(),
+        resumes.isEmpty
+            ? const SizedBox.shrink()
+            : const Column(
+                children: [
+                  gapH40,
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 24),
+                    child: ResumeButton(),
+                  ),
+                ],
+              ),
         gapH8,
         ContactBar(contacts: contacts),
-      ],
-    );
-  }
-
-  Widget _buildResumeButton(WidgetRef ref) {
-    final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
-    if (resumes.isEmpty) return const SizedBox.shrink();
-    return const Column(
-      children: [
-        gapH40,
-        Padding(
-          padding: EdgeInsets.symmetric(vertical: 24),
-          child: ResumeButton(),
-        ),
       ],
     );
   }
