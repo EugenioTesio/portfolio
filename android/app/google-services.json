@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "822249020937",
+    "project_id": "eugenio-tesio-porfolio",
+    "storage_bucket": "eugenio-tesio-porfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822249020937:android:8bb79fdadd6f831ef522d8",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822249020937-h25kcvjvv7sjr892e4o7up524horm8gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4iA7ofEzbnhPqB3_B4ZZCXyzLx9_zwxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822249020937-h25kcvjvv7sjr892e4o7up524horm8gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
