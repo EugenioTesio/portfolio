@@ -21,12 +21,7 @@ class ResumeRepository {
       Resume(
         language: _appLocalizations.englishLanguage,
         url:
-            "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing",
-      ),
-      Resume(
-        language: _appLocalizations.frenchLanguage,
-        url:
-            "https://drive.google.com/file/d/13t62MynE9GavlyrtHNM1ShdkdJT0bc0B/view?usp=sharing",
+            "https://drive.google.com/file/d/119WqZ5NPGDS1YipAd1qoME_mQlD5lFiU/view?usp=sharing",
       ),
     ];
   }

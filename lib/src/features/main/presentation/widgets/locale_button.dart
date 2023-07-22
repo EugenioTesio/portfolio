@@ -6,7 +6,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 const _languageCode = {
   "en": "English",
-  "fr": "Français",
+  "es": "Spanish",
 };
 
 class LocaleButton extends ConsumerWidget {
