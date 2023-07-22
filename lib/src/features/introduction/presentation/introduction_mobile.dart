@@ -6,6 +6,7 @@ import 'package:portfolio/src/features/introduction/data/resume_repository.dart'
 import 'package:portfolio/src/features/introduction/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/favorite_icon.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/magic_icon.dart';
+import 'package:portfolio/src/features/introduction/presentation/widgets/profile_image.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
 
@@ -19,6 +20,14 @@ class IntroductionMobile extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Wrap(
+          children: [
+            ProfileImage(
+              asset: 'assets/images/profile-image-2-without-bg.png',
+              size: 340,
+            ),
+          ],
+        ),
         Text(
           context.localized.name,
           style: Theme.of(context).textTheme.displayMedium,

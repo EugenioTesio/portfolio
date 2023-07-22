@@ -25,52 +25,47 @@ class _MainTabletState extends ConsumerState<MainTablet> {
     return Column(
       children: [
         Expanded(
-          child: Container(
-            color: Theme.of(context).colorScheme.primary,
-            child: CustomScrollView(
-              controller: scrollController,
-              slivers: [
-                const MySliverAppBar(),
-                SliverList.list(
-                  children: [
-                    Padding(
-                      padding: _buildResponsivePadding(),
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
-                              child: IntroductionSection(
-                                key: ref.watch(homeSectionKeyProvider),
-                              ),
+          child: CustomScrollView(
+            controller: scrollController,
+            slivers: [
+              const MySliverAppBar(),
+              SliverList.list(
+                children: [
+                  Padding(
+                    padding: _buildResponsivePadding(),
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            child: IntroductionSection(
+                              key: ref.watch(homeSectionKeyProvider),
                             ),
-                            gapH100,
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
-                              child: AboutSection(
-                                key: ref.watch(aboutSectionKeyProvider),
-                              ),
+                          ),
+                          gapH100,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            child: AboutSection(
+                              key: ref.watch(aboutSectionKeyProvider),
                             ),
-                            gapH100,
-                            ExperienceSection(
-                              key: ref.watch(experienceSectionKeyProvider),
-                            ),
-                            gapH100,
-                            ProjectSection(
-                              key: ref.watch(projectSectionKeyProvider),
-                            ),
-                          ],
-                        ),
+                          ),
+                          gapH100,
+                          ExperienceSection(
+                            key: ref.watch(experienceSectionKeyProvider),
+                          ),
+                          gapH100,
+                          ProjectSection(
+                            key: ref.watch(projectSectionKeyProvider),
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                )
-              ],
-            ),
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ],
