@@ -11,9 +11,15 @@ class ProfileImage extends StatelessWidget {
   final double size;
 
   final _controller = AnimatedGlitchController(
-    frequency: const Duration(milliseconds: 300),
-    distortionShift: const DistortionShift(count: 3),
-    level: 2,
+    frequency: const Duration(milliseconds: 500),
+    distortionShift: const DistortionShift(count: 100),
+    colorChannelShift: const ColorChannelShift(
+      colors: [
+        Colors.grey,
+        Colors.white,
+      ],
+    ),
+    level: 3,
   );
 
   @override
@@ -22,7 +28,6 @@ class ProfileImage extends StatelessWidget {
       width: size,
       height: size,
       child: AnimatedGlitch(
-        showColorChannels: false,
         controller: _controller,
         child: Image.asset(
           asset,
