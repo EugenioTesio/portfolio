@@ -14,7 +14,7 @@ final lightTheme = FlexThemeData.light(
     secondary: Color(0xff60a3d9),
     secondaryContainer: Color(0xff003b73),
     tertiary: Color(0xff8a9cbb),
-    tertiaryContainer: Color(0xff000000),
+    tertiaryContainer: Color(0xff60a3d9),
     appBarColor: Color(0xff003b73),
     error: Color(0xffb00020),
   ),
