@@ -26,7 +26,8 @@ class Responsive extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final maxWidth = MediaQuery.sizeOf(context).width;
-    if (maxWidth < 640 && mobile != null) {
+    final maxHeight = MediaQuery.sizeOf(context).height;
+    if ((maxWidth < 640 || maxHeight < 915) && mobile != null) {
       return mobile!;
     } else if (maxWidth < 1024 && tablet != null) {
       return tablet!;
