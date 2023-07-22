@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
@@ -16,7 +17,7 @@ class ProjectDescription extends ConsumerWidget {
       children: [
         Row(
           children: [
-            Text(
+            AppText(
               "${project.title} ",
               style: Theme.of(context)
                   .textTheme
@@ -30,7 +31,7 @@ class ProjectDescription extends ConsumerWidget {
         Row(
           children: [
             Expanded(
-              child: Text(
+              child: AppText(
                 project.description,
                 style: Theme.of(context).textTheme.bodyMedium,
               ),

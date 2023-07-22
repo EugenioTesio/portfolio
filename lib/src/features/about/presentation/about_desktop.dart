@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class AboutDesktop extends ConsumerWidget {
@@ -12,13 +13,13 @@ class AboutDesktop extends ConsumerWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(bottom: 32),
-          child: Text(
+          child: AppText(
             context.localized.aboutSectionTitleAlt,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: Theme.of(context).colorScheme.secondaryContainer),
           ),
         ),
-        Text(
+        AppText(
           context.localized.about,
           style: Theme.of(context).textTheme.bodyLarge,
         ),

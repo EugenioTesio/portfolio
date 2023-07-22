@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
 
 class TechnologyChip extends ConsumerWidget {
@@ -14,7 +15,7 @@ class TechnologyChip extends ConsumerWidget {
       cursor: SystemMouseCursors.click,
       child: IgnorePointer(
         child: Chip(
-          label: Text(
+          label: AppText(
             name,
             style: TextStyle(
               color: Theme.of(context).colorScheme.secondaryContainer,

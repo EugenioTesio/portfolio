@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 
 class MyDrawerButton extends ConsumerStatefulWidget {
   const MyDrawerButton({
@@ -42,7 +43,7 @@ class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
       },
       child: GestureDetector(
         onTap: () => _onTap(context),
-        child: Text(
+        child: AppText(
           widget.title,
           style: titleStyle,
         ),

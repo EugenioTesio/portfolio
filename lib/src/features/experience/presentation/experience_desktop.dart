@@ -1,6 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/data/experience_repository.dart';
 import 'package:portfolio/src/features/experience/presentation/widgets/experience_card.dart';
@@ -19,7 +20,7 @@ class ExperienceDesktop extends ConsumerWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 12, bottom: 20),
-          child: Text(
+          child: AppText(
             context.localized.experienceSectionTitle,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Theme.of(context).colorScheme.secondaryContainer,

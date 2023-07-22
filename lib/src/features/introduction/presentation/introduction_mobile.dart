@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/introduction/data/contact_repository.dart';
 import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
@@ -28,7 +29,7 @@ class IntroductionMobile extends ConsumerWidget {
             ),
           ],
         ),
-        Text(
+        AppText(
           context.localized.name,
           style: Theme.of(context).textTheme.displayMedium,
         ),
@@ -36,7 +37,7 @@ class IntroductionMobile extends ConsumerWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
+            AppText(
               "${context.localized.description} ",
               style: Theme.of(context)
                   .textTheme
@@ -50,7 +51,7 @@ class IntroductionMobile extends ConsumerWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
+            AppText(
               "${context.localized.subDescription} ",
               style: Theme.of(context).textTheme.bodyLarge,
             ),

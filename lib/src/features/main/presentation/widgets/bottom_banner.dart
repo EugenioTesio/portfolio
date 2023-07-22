@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
 import 'package:portfolio/src/common_widgets/link.dart';
 
@@ -18,7 +19,7 @@ class BottomBanner extends ConsumerWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          AppText(
             "${context.localized.credit} ",
             style: Theme.of(context).textTheme.bodyLarge,
           ),

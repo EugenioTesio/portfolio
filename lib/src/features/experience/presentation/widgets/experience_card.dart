@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/common_widgets/link.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
@@ -34,7 +35,7 @@ class ExperienceCard extends ConsumerWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Flexible(
-                      child: Text(
+                      child: AppText(
                         experience.job,
                         style: Theme.of(context)
                             .textTheme
@@ -44,7 +45,7 @@ class ExperienceCard extends ConsumerWidget {
                     ),
                     gapW24,
                     if (!Responsive.isMobile(context))
-                      Text(
+                      AppText(
                         "${experience.startDate} - ${experience.endDate}",
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
@@ -54,7 +55,7 @@ class ExperienceCard extends ConsumerWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      AppText(
                         experience.company,
                         style: Theme.of(context)
                             .textTheme
@@ -65,14 +66,14 @@ class ExperienceCard extends ConsumerWidget {
                                     .secondaryContainer),
                       ),
                       gapH4,
-                      Text(
+                      AppText(
                         "${experience.startDate} - ${experience.endDate}",
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ],
                   )
                 else
-                  Text(
+                  AppText(
                     experience.company,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color:

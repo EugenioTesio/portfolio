@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/introduction/data/resume_repository.dart';
 import 'package:portfolio/src/features/introduction/presentation/widgets/resume_language_dialog.dart';
@@ -34,7 +35,7 @@ class ResumeButton extends ConsumerWidget {
             color: Theme.of(context).colorScheme.secondaryContainer,
           ),
           gapW12,
-          Text(
+          AppText(
             context.localized.resume,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   fontWeight: FontWeight.bold,
