@@ -14,7 +14,7 @@ class BottomBanner extends ConsumerWidget {
       duration: const Duration(milliseconds: 500),
       width: double.maxFinite,
       height: bannerHeight,
-      color: Theme.of(context).colorScheme.secondary,
+      color: Theme.of(context).colorScheme.tertiary.withAlpha(40),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

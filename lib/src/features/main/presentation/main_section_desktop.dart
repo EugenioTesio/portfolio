@@ -38,7 +38,6 @@ class _MainDesktopState extends ConsumerState<MainDesktop> {
                   },
                   child: Container(
                     padding: const EdgeInsets.fromLTRB(100, 80, 100, 100),
-                    color: Theme.of(context).colorScheme.primary,
                     child: const Align(
                       alignment: Alignment.topRight,
                       child: IntroductionSection(),
@@ -47,38 +46,34 @@ class _MainDesktopState extends ConsumerState<MainDesktop> {
                 ),
               ),
               Expanded(
-                child: Container(
-                  color: Theme.of(context).colorScheme.primary,
-                  child: SingleChildScrollView(
-                    controller: scrollController,
-                    padding: const EdgeInsetsDirectional.only(
-                      top: 80,
-                      end: 140,
-                      bottom: 88,
-                    ),
-                    child: Align(
-                      alignment: Alignment.topLeft,
-                      child: SizedBox(
-                        width: 520,
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 12),
-                              child: AboutSection(
-                                key: ref.watch(aboutSectionKeyProvider),
-                              ),
+                child: SingleChildScrollView(
+                  controller: scrollController,
+                  padding: const EdgeInsetsDirectional.only(
+                    top: 80,
+                    end: 140,
+                    bottom: 88,
+                  ),
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: SizedBox(
+                      width: 520,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            child: AboutSection(
+                              key: ref.watch(aboutSectionKeyProvider),
                             ),
-                            const SizedBox(height: 120),
-                            ExperienceSection(
-                              key: ref.watch(experienceSectionKeyProvider),
-                            ),
-                            const SizedBox(height: 120),
-                            ProjectSection(
-                              key: ref.watch(projectSectionKeyProvider),
-                            ),
-                          ],
-                        ),
+                          ),
+                          const SizedBox(height: 120),
+                          ExperienceSection(
+                            key: ref.watch(experienceSectionKeyProvider),
+                          ),
+                          const SizedBox(height: 120),
+                          ProjectSection(
+                            key: ref.watch(projectSectionKeyProvider),
+                          ),
+                        ],
                       ),
                     ),
                   ),

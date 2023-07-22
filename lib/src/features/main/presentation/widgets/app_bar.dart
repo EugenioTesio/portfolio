@@ -16,7 +16,7 @@ class MyAppBar extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return AppBar(
       scrolledUnderElevation: 0,
-      backgroundColor: Theme.of(context).colorScheme.secondary,
+      backgroundColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
       centerTitle: false,
       titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,

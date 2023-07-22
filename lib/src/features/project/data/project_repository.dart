@@ -25,8 +25,8 @@ class ProjectRepository {
           "Flutter",
           "Dart",
         ],
-        url: "https://github.com/Aaldn/portfolio#readme",
-        asset: "assets/projects/vulletic.png",
+        url: "https://github.com/EugenioTesio/portfolio#readme",
+        asset: "assets/projects/portfolio.png",
       ),
       Project(
         title: "Vulletic Electrical Vehicle Charger Solution",

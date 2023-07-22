@@ -14,7 +14,8 @@ class AboutDesktop extends ConsumerWidget {
           padding: const EdgeInsets.only(bottom: 32),
           child: Text(
             context.localized.aboutSectionTitleAlt,
-            style: Theme.of(context).textTheme.titleLarge,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                color: Theme.of(context).colorScheme.secondaryContainer),
           ),
         ),
         Text(

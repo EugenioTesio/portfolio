@@ -11,8 +11,12 @@ class TechnologyChip extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: IgnorePointer(
         child: Chip(
-          label: Text(name),
-          backgroundColor: Theme.of(context).colorScheme.secondary,
+          label: Text(
+            name,
+            style: TextStyle(
+                color: Theme.of(context).colorScheme.secondaryContainer),
+          ),
+          backgroundColor: Colors.black,
           side: BorderSide.none,
         ),
       ),

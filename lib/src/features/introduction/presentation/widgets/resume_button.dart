@@ -16,7 +16,7 @@ class ResumeButton extends ConsumerWidget {
       style: OutlinedButton.styleFrom(
         side: BorderSide(
           width: 2,
-          color: Theme.of(context).colorScheme.tertiary,
+          color: Theme.of(context).colorScheme.secondaryContainer,
         ),
         elevation: 16,
         shape: const StadiumBorder(),
@@ -31,15 +31,15 @@ class ResumeButton extends ConsumerWidget {
         children: [
           Icon(
             FontAwesomeIcons.filePdf,
-            color: Theme.of(context).colorScheme.inverseSurface,
+            color: Theme.of(context).colorScheme.secondaryContainer,
           ),
           gapW12,
           Text(
             context.localized.resume,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                ),
           ),
         ],
       ),

@@ -21,7 +21,9 @@ class ExperienceDesktop extends ConsumerWidget {
           padding: const EdgeInsets.only(left: 12, bottom: 20),
           child: Text(
             context.localized.experienceSectionTitle,
-            style: Theme.of(context).textTheme.titleLarge,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                ),
           ),
         ),
         ...experiences.mapIndexed((index, experience) {

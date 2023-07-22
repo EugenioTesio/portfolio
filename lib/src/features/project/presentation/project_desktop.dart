@@ -20,7 +20,8 @@ class ProjectDesktop extends ConsumerWidget {
           padding: const EdgeInsets.only(left: 12, bottom: 20),
           child: Text(
             context.localized.projectsSectionTitle,
-            style: Theme.of(context).textTheme.titleLarge,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                color: Theme.of(context).colorScheme.secondaryContainer),
           ),
         ),
         ...projects.mapIndexed((index, project) {

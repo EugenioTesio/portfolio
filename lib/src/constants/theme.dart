@@ -83,7 +83,7 @@ final dartTheme = FlexThemeData.dark(
     primary: Color(0xff274472),
     primaryContainer: Color(0xff41729f),
     secondary: Color(0xff122035),
-    secondaryContainer: Color(0xffc3e0e5),
+    secondaryContainer: Color(0xffff8000),
     tertiary: Color(0xff8a9cbb),
     tertiaryContainer: Color(0xff000000),
     appBarColor: Color(0xffc3e0e5),

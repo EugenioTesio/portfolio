@@ -29,7 +29,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
         onLongPress: _scaleUp,
         onLongPressUp: _scaleDown,
         child: Material(
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).colorScheme.tertiary.withAlpha(20),
           borderRadius: BorderRadius.circular(20),
           child: InkWell(
             onTap: () async {

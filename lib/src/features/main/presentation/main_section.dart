@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_desktop.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_tablet.dart';
+import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/bottom_banner.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/end_drawer.dart';
 import 'package:portfolio/src/features/main/presentation/provider/scroll_controller.dart';
@@ -28,9 +29,9 @@ class _MainSectionState extends ConsumerState<MainSection> {
   @override
   Widget build(BuildContext context) {
     ref.watch(scrollControllerProvider).addListener(_checkEndOfScroll);
+    final darkMode = ref.watch(darkModeProvider);
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.secondary,
       endDrawer: const SafeArea(
         left: false,
         right: false,
@@ -41,17 +42,27 @@ class _MainSectionState extends ConsumerState<MainSection> {
         left: false,
         right: false,
         bottom: false,
-        child: Stack(
-          children: [
-            const Responsive(
-              desktop: MainDesktop(),
-              tablet: MainTablet(),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(darkMode
+                  ? 'assets/images/background-dark.png'
+                  : 'assets/images/background-light.png'),
+              fit: BoxFit.cover,
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: BottomBanner(bannerHeight: _bottomBannerHeight),
-            )
-          ],
+          ),
+          child: Stack(
+            children: [
+              const Responsive(
+                desktop: MainDesktop(),
+                tablet: MainTablet(),
+              ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: BottomBanner(bannerHeight: _bottomBannerHeight),
+              )
+            ],
+          ),
         ),
       ),
     );

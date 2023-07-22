@@ -15,7 +15,7 @@ class ExperienceCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Material(
-      color: Theme.of(context).colorScheme.primary,
+      color: Theme.of(context).colorScheme.tertiary.withAlpha(20),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: () {},
@@ -56,7 +56,13 @@ class ExperienceCard extends ConsumerWidget {
                     children: [
                       Text(
                         experience.company,
-                        style: Theme.of(context).textTheme.titleMedium,
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium
+                            ?.copyWith(
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .secondaryContainer),
                       ),
                       gapH4,
                       Text(
@@ -68,7 +74,9 @@ class ExperienceCard extends ConsumerWidget {
                 else
                   Text(
                     experience.company,
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color:
+                            Theme.of(context).colorScheme.secondaryContainer),
                   ),
                 gapH8,
                 Row(
