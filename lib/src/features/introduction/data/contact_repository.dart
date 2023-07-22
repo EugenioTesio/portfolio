@@ -14,22 +14,22 @@ class ContactRepository {
     return const [
       Contact(
         tooltip: "LinkedIn",
-        url: "https://www.linkedin.com/in/aladdine-abdou/",
+        url: "https://www.linkedin.com/in/eugenio-tesio/",
         icon: FontAwesomeIcons.linkedin,
       ),
       Contact(
         tooltip: "Github",
-        url: "https://www.github.com/Aaldn",
+        url: "https://github.com/EugenioTesio",
         icon: FontAwesomeIcons.github,
       ),
       Contact(
-        tooltip: "aladdine.abdou@gmail.com",
-        url: "mailto:aladdine.abdou@gmail.com",
+        tooltip: "eugeniotesio@gmail.com",
+        url: "mailto:eugeniotesio@gmail.com",
         icon: FontAwesomeIcons.solidEnvelope,
       ),
       Contact(
-        tooltip: "+33 7 82 54 34 70",
-        url: "tel:+33782543470",
+        tooltip: "+54 9 3564 59 9945",
+        url: "tel:+5493564599945",
         icon: FontAwesomeIcons.phone,
       ),
     ];
