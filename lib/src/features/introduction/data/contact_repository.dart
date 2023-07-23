@@ -32,6 +32,11 @@ class ContactRepository {
         url: "tel:+5493564599945",
         icon: FontAwesomeIcons.phone,
       ),
+      Contact(
+        tooltip: "Medium",
+        url: "https://medium.com/@eugeniotesio",
+        icon: FontAwesomeIcons.medium,
+      ),
     ];
   }
 }
