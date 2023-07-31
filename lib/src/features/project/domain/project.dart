@@ -1,10 +1,4 @@
 class Project {
-  final String title;
-  final String description;
-  final String url;
-  final String asset;
-  final List<String>? technologies;
-
   const Project({
     required this.title,
     required this.description,
@@ -12,4 +6,9 @@ class Project {
     required this.asset,
     this.technologies,
   });
+  final String title;
+  final String description;
+  final String url;
+  final String asset;
+  final List<String>? technologies;
 }

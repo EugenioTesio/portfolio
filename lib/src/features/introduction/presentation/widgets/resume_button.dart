@@ -47,10 +47,10 @@ class ResumeButton extends ConsumerWidget {
     );
   }
 
-  void _onPressed(BuildContext context, WidgetRef ref) async {
+  Future<void> _onPressed(BuildContext context, WidgetRef ref) async {
     final resumes = ref.watch(resumeRepositoryProvider).fetchLocalizedResumes();
     if (resumes.length > 1) {
-      showDialog(
+      await showDialog(
         context: context,
         builder: (context) => ResumeLanguageDialog(resumes: resumes),
       );
@@ -59,7 +59,7 @@ class ResumeButton extends ConsumerWidget {
         await launchUrl(Uri.parse(resumes.first.url));
       } catch (e) {
         const snackBar = SnackBar(
-          content: Text("Could not open resume"),
+          content: Text('Could not open resume'),
         );
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -70,7 +70,7 @@ class ResumeButton extends ConsumerWidget {
       }
     } else {
       const snackBar = SnackBar(
-        content: Text("Could not open resume"),
+        content: Text('Could not open resume'),
       );
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);

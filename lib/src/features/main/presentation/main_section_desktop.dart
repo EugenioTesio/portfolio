@@ -4,10 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
 import 'package:portfolio/src/features/introduction/presentation/introduction_section.dart';
-import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
-import 'package:portfolio/src/features/project/presentation/project_section.dart';
 import 'package:portfolio/src/features/main/presentation/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
+import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
+import 'package:portfolio/src/features/project/presentation/project_section.dart';
 
 class MainDesktop extends ConsumerStatefulWidget {
   const MainDesktop({super.key});

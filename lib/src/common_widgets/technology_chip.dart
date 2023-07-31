@@ -4,7 +4,7 @@ import 'package:portfolio/src/common_widgets/app_text.dart';
 import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
 
 class TechnologyChip extends ConsumerWidget {
-  const TechnologyChip({super.key, required this.name});
+  const TechnologyChip({required this.name, super.key});
 
   final String name;
 

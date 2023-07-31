@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
+import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/drawer_button.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/locale_button.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
-import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
 
 class EndDrawer extends ConsumerWidget {
   const EndDrawer({super.key});
@@ -39,7 +39,6 @@ class EndDrawer extends ConsumerWidget {
             child: ListView(
               children: [
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     gapH40,

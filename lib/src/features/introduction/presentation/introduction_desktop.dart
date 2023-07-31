@@ -41,7 +41,7 @@ class IntroductionDesktop extends ConsumerWidget {
         Wrap(
           children: [
             AppText(
-              "${context.localized.description} ",
+              '${context.localized.description} ',
               style: Theme.of(context).textTheme.titleLarge,
               type: AppTextType.autosize,
               maxLines: 1,
@@ -53,23 +53,24 @@ class IntroductionDesktop extends ConsumerWidget {
         Wrap(
           children: [
             AppText(
-              "${context.localized.subDescription} ",
+              '${context.localized.subDescription} ',
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const FavoriteIcon(),
           ],
         ),
-        resumes.isEmpty
-            ? const SizedBox.shrink()
-            : const Column(
-                children: [
-                  gapH40,
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 24),
-                    child: ResumeButton(),
-                  ),
-                ],
+        if (resumes.isEmpty)
+          const SizedBox.shrink()
+        else
+          const Column(
+            children: [
+              gapH40,
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 24),
+                child: ResumeButton(),
               ),
+            ],
+          ),
         gapH8,
         ContactBar(contacts: contacts),
       ],

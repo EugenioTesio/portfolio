@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AppBarButton extends ConsumerWidget {
-  const AppBarButton({super.key, this.onPressed, required this.title});
+  const AppBarButton({required this.title, super.key, this.onPressed});
 
   final VoidCallback? onPressed;
   final String title;

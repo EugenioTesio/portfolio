@@ -6,7 +6,7 @@ import 'package:portfolio/src/features/introduction/presentation/widgets/resume_
 import 'package:portfolio/src/localization/localized_build_context.dart';
 
 class ResumeLanguageDialog extends ConsumerWidget {
-  const ResumeLanguageDialog({super.key, required this.resumes});
+  const ResumeLanguageDialog({required this.resumes, super.key});
 
   final List<Resume> resumes;
 
@@ -16,8 +16,8 @@ class ResumeLanguageDialog extends ConsumerWidget {
       title: Center(
         child: Text(context.localized.downloadResume),
       ),
-      titlePadding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 8.0),
-      contentPadding: const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 40.0),
+      titlePadding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
+      contentPadding: const EdgeInsets.fromLTRB(0, 12, 0, 40),
       children: [
         const Divider(height: 0),
         ...resumes.mapIndexed((index, resume) {

@@ -1,7 +1,7 @@
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 part 'resume_repository.g.dart';
 
@@ -21,7 +21,7 @@ class ResumeRepository {
       Resume(
         language: _appLocalizations.englishLanguage,
         url:
-            "https://drive.google.com/file/d/119WqZ5NPGDS1YipAd1qoME_mQlD5lFiU/view?usp=sharing",
+            'https://drive.google.com/file/d/119WqZ5NPGDS1YipAd1qoME_mQlD5lFiU/view?usp=sharing',
       ),
     ];
   }

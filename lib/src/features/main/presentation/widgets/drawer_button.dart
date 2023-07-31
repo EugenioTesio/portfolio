@@ -4,9 +4,9 @@ import 'package:portfolio/src/common_widgets/app_text.dart';
 
 class MyDrawerButton extends ConsumerStatefulWidget {
   const MyDrawerButton({
-    super.key,
     required this.title,
     required this.sectionKey,
+    super.key,
   });
 
   final String title;

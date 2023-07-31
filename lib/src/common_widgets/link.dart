@@ -5,8 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Link extends ConsumerStatefulWidget {
   const Link({
-    super.key,
     required this.url,
+    super.key,
     this.displayLink,
     this.displayLeadingIcon = false,
     this.underlined = false,
@@ -57,7 +57,7 @@ class _LinksState extends ConsumerState<Link> {
         onTap: () async {
           if (!await launchUrl(Uri.parse(widget.url))) {
             final snackBar = SnackBar(
-              content: Text("Could not launch ${widget.url}"),
+              content: Text('Could not launch ${widget.url}'),
             );
             if (!mounted) return;
             ScaffoldMessenger.of(context).showSnackBar(snackBar);

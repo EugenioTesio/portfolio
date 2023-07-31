@@ -22,7 +22,8 @@ class ProjectDesktop extends ConsumerWidget {
           child: AppText(
             context.localized.projectsSectionTitle,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: Theme.of(context).colorScheme.secondaryContainer),
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                ),
           ),
         ),
         ...projects.mapIndexed((index, project) {

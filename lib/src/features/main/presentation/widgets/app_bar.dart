@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/constants/sizes.dart';
+import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar_button.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/dark_mode_switch.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/locale_button.dart';
 import 'package:portfolio/src/localization/localized_build_context.dart';
-import 'package:portfolio/src/features/main/presentation/provider/section_key_provider.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
 
 class MyAppBar extends ConsumerWidget {
   const MyAppBar({super.key});
@@ -25,7 +25,7 @@ class MyAppBar extends ConsumerWidget {
         children: [
           Icon(FontAwesomeIcons.terminal),
           SizedBox(width: 12),
-          Text("Portfolio"),
+          Text('Portfolio'),
         ],
       ),
       actions: [

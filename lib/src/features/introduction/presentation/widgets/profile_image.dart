@@ -5,8 +5,8 @@ class ProfileImage extends StatelessWidget {
   ProfileImage({
     required this.asset,
     this.size = 200,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   final String asset;
   final double size;
 

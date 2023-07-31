@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_desktop.dart';
 import 'package:portfolio/src/features/main/presentation/main_section_tablet.dart';
 import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
+import 'package:portfolio/src/features/main/presentation/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/bottom_banner.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/end_drawer.dart';
-import 'package:portfolio/src/features/main/presentation/provider/scroll_controller.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
 
 class MainSection extends ConsumerStatefulWidget {
   const MainSection({super.key});
@@ -45,9 +45,11 @@ class _MainSectionState extends ConsumerState<MainSection> {
         child: DecoratedBox(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(darkMode
-                  ? 'assets/images/background-dark.png'
-                  : 'assets/images/background-light.png'),
+              image: AssetImage(
+                darkMode
+                    ? 'assets/images/background-dark.png'
+                    : 'assets/images/background-light.png',
+              ),
               fit: BoxFit.cover,
             ),
           ),

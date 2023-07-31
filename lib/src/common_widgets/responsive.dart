@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class Responsive extends ConsumerWidget {
-  final Widget desktop;
-  final Widget? tablet;
-  final Widget? mobile;
-
   const Responsive({
-    super.key,
     required this.desktop,
+    super.key,
     this.tablet,
     this.mobile,
   });
+  final Widget desktop;
+  final Widget? tablet;
+  final Widget? mobile;
 
   static bool isDesktop(BuildContext context) =>
       MediaQuery.sizeOf(context).width >= 1024;

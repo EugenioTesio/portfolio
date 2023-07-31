@@ -5,7 +5,7 @@ import 'package:portfolio/src/features/introduction/domain/contact.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactBar extends ConsumerWidget {
-  const ContactBar({super.key, required this.contacts});
+  const ContactBar({required this.contacts, super.key});
 
   final List<Contact> contacts;
 
@@ -18,7 +18,7 @@ class ContactBar extends ConsumerWidget {
           onPressed: () async {
             if (!await launchUrl(Uri.parse(contact.url))) {
               final snackBar = SnackBar(
-                content: Text("Could not launch ${contact.url}"),
+                content: Text('Could not launch ${contact.url}'),
               );
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);

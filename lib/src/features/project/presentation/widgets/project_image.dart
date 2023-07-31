@@ -5,9 +5,9 @@ import 'package:portfolio/src/features/project/domain/project.dart';
 
 class ProjectImage extends ConsumerWidget {
   const ProjectImage({
-    super.key,
     required this.project,
     required this.isHovered,
+    super.key,
   });
 
   final Project project;
@@ -44,9 +44,9 @@ class ProjectImage extends ConsumerWidget {
                       end: Alignment.bottomCenter,
                       colors: [
                         Colors.transparent,
-                        isHovered ? Colors.black12 : Colors.transparent,
-                        isHovered ? Colors.black26 : Colors.transparent,
-                        isHovered ? Colors.black54 : Colors.transparent,
+                        if (isHovered) Colors.black12 else Colors.transparent,
+                        if (isHovered) Colors.black26 else Colors.transparent,
+                        if (isHovered) Colors.black54 else Colors.transparent,
                       ],
                     ),
                   ),

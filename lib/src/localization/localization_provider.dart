@@ -16,5 +16,9 @@ class Localization extends _$Localization {
     );
   }
 
-  void setLocale(Locale locale) => state = locale;
+  //locale getter
+  Locale get locale => state;
+
+  //locale setter
+  set locale(Locale locale) => state = locale;
 }

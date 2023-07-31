@@ -16,7 +16,8 @@ class AboutDesktop extends ConsumerWidget {
           child: AppText(
             context.localized.aboutSectionTitleAlt,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: Theme.of(context).colorScheme.secondaryContainer),
+                  color: Theme.of(context).colorScheme.secondaryContainer,
+                ),
           ),
         ),
         AppText(

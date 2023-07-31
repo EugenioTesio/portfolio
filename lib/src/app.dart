@@ -15,7 +15,7 @@ class MyApp extends ConsumerWidget {
     return SeoController(
       tree: WidgetTree(context: context),
       child: MaterialApp(
-        title: "Eugenio Tesio",
+        title: 'Eugenio Tesio',
         debugShowCheckedModeBanner: false,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,

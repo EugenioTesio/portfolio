@@ -38,7 +38,7 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             AppText(
-              "${context.localized.description} ",
+              '${context.localized.description} ',
               style: Theme.of(context)
                   .textTheme
                   .titleLarge
@@ -52,7 +52,7 @@ class IntroductionMobile extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             AppText(
-              "${context.localized.subDescription} ",
+              '${context.localized.subDescription} ',
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const FavoriteIcon(),

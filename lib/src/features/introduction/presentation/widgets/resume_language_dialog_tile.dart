@@ -4,7 +4,7 @@ import 'package:portfolio/src/features/introduction/domain/resume.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ResumeLanguageDialogTile extends ConsumerWidget {
-  const ResumeLanguageDialogTile({super.key, required this.resume});
+  const ResumeLanguageDialogTile({required this.resume, super.key});
   final Resume resume;
 
   @override
@@ -27,12 +27,15 @@ class ResumeLanguageDialogTile extends ConsumerWidget {
   }
 }
 
-void _onPressed(BuildContext context, {required String resumeUrl}) async {
+Future<void> _onPressed(
+  BuildContext context, {
+  required String resumeUrl,
+}) async {
   try {
     await launchUrl(Uri.parse(resumeUrl));
   } catch (e) {
     const snackBar = SnackBar(
-      content: Text("Could not open resume"),
+      content: Text('Could not open resume'),
     );
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(snackBar);

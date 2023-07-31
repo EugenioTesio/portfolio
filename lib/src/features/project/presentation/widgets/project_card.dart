@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_description.dart';
 import 'package:portfolio/src/features/project/presentation/widgets/project_image.dart';
-import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends ConsumerStatefulWidget {
-  const ProjectCard({super.key, required this.project});
+  const ProjectCard({required this.project, super.key});
 
   final Project project;
 
@@ -35,7 +35,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
             onTap: () async {
               if (!await launchUrl(Uri.parse(widget.project.url))) {
                 final snackBar = SnackBar(
-                  content: Text("Could not launch ${widget.project.url}"),
+                  content: Text('Could not launch ${widget.project.url}'),
                 );
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -48,7 +48,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
             highlightColor:
                 Theme.of(context).colorScheme.tertiary.withAlpha(20),
             child: Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12),
               child: _buildResponsiveProjectCardContent(context),
             ),
           ),

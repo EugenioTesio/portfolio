@@ -1,12 +1,4 @@
 class Experience {
-  final String startDate;
-  final String endDate;
-  final String job;
-  final String company;
-  final String description;
-  final List<String>? technologies;
-  final String? url;
-
   const Experience({
     required this.startDate,
     required this.endDate,
@@ -16,4 +8,11 @@ class Experience {
     this.technologies,
     this.url,
   });
+  final String startDate;
+  final String endDate;
+  final String job;
+  final String company;
+  final String description;
+  final List<String>? technologies;
+  final String? url;
 }

@@ -9,7 +9,7 @@ import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
 
 class ExperienceCard extends ConsumerWidget {
-  const ExperienceCard({super.key, required this.experience});
+  const ExperienceCard({required this.experience, super.key});
 
   final Experience experience;
 
@@ -27,7 +27,7 @@ class ExperienceCard extends ConsumerWidget {
         child: MouseRegion(
           cursor: SystemMouseCursors.basic,
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -46,7 +46,7 @@ class ExperienceCard extends ConsumerWidget {
                     gapW24,
                     if (!Responsive.isMobile(context))
                       AppText(
-                        "${experience.startDate} - ${experience.endDate}",
+                        '${experience.startDate} - ${experience.endDate}',
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                   ],
@@ -57,17 +57,16 @@ class ExperienceCard extends ConsumerWidget {
                     children: [
                       AppText(
                         experience.company,
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleMedium
-                            ?.copyWith(
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .secondaryContainer),
+                        style:
+                            Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .secondaryContainer,
+                                ),
                       ),
                       gapH4,
                       AppText(
-                        "${experience.startDate} - ${experience.endDate}",
+                        '${experience.startDate} - ${experience.endDate}',
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ],
@@ -76,8 +75,9 @@ class ExperienceCard extends ConsumerWidget {
                   AppText(
                     experience.company,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        color:
-                            Theme.of(context).colorScheme.secondaryContainer),
+                          color:
+                              Theme.of(context).colorScheme.secondaryContainer,
+                        ),
                   ),
                 gapH8,
                 Row(
