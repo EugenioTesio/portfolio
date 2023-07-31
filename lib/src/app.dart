@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/src/constants/theme.dart';
 import 'package:portfolio/src/features/main/presentation/main_section.dart';
 import 'package:portfolio/src/features/main/presentation/provider/dark_mode_controller.dart';
 import 'package:portfolio/src/localization/localization_provider.dart';
 import 'package:seo/seo.dart';
-
-import 'constants/theme.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});

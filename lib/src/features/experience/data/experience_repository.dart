@@ -59,7 +59,7 @@ class ExperienceRepository {
         startDate: "Sep. 2021",
         endDate: "Feb. 2022",
         job: _appLocalizations.valtechDevJobTitle,
-        company: "Tandamos",
+        company: "Valtech",
         description: _appLocalizations.valtechDevJobDescription,
         technologies: [
           "Spring Boot",
