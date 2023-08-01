@@ -29,10 +29,10 @@ packages:
     dependency: "direct main"
     description:
       name: animated_glitch
-      sha256: "2808e13868917accf24cf63fc59ff9cab7e3559bbb84ec453fe338d466d0baa2"
+      sha256: "0e9dac2a8863f3a77861192d9f136062d1776e50a63ab8d2325f331bd2cd3f63"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.1"
+    version: "2.0.0+2"
   archive:
     dependency: transitive
     description:
@@ -380,7 +380,7 @@ packages:
     source: hosted
     version: "2.3.6"
   flutter_test:
-    dependency: "direct main"
+    dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -425,10 +425,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: "2776c66b3e97c6cdd58d1bd3281548b074b64f1fd5c8f82391f7456e38849567"
+      sha256: e20ff62b158b96f392bfc8afe29dee1503c94fbea2cbe8186fd59b756b8ae982
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.5"
+    version: "5.1.0"
   graphs:
     dependency: transitive
     description:
