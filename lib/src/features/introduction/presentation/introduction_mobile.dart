@@ -37,12 +37,14 @@ class IntroductionMobile extends ConsumerWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            AppText(
-              '${context.localized.description} ',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleLarge
-                  ?.copyWith(fontSize: 20),
+            Flexible(
+              child: AppText(
+                '${context.localized.description} ',
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge
+                    ?.copyWith(fontSize: 20),
+              ),
             ),
             const MagicIcon(),
           ],
@@ -51,9 +53,11 @@ class IntroductionMobile extends ConsumerWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            AppText(
-              '${context.localized.subDescription} ',
-              style: Theme.of(context).textTheme.bodyLarge,
+            Flexible(
+              child: AppText(
+                '${context.localized.subDescription} ',
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
             ),
             const FavoriteIcon(),
           ],

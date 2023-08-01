@@ -17,12 +17,14 @@ class ProjectDescription extends ConsumerWidget {
       children: [
         Row(
           children: [
-            AppText(
-              '${project.title} ',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleMedium
-                  ?.copyWith(fontWeight: FontWeight.bold),
+            Flexible(
+              child: AppText(
+                '${project.title} ',
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontWeight: FontWeight.bold),
+              ),
             ),
             const Icon(Icons.open_in_new),
           ],

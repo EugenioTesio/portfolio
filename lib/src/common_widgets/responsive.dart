@@ -12,15 +12,18 @@ class Responsive extends ConsumerWidget {
   final Widget? tablet;
   final Widget? mobile;
 
+  static int desktopBreakpoint = 1024;
+  static int mobileBreackpoint = 640;
+
   static bool isDesktop(BuildContext context) =>
-      MediaQuery.sizeOf(context).width >= 1024;
+      MediaQuery.sizeOf(context).width >= desktopBreakpoint;
 
   static bool isTablet(BuildContext context) =>
-      MediaQuery.sizeOf(context).width < 1024 &&
-      MediaQuery.sizeOf(context).width >= 640;
+      MediaQuery.sizeOf(context).width < desktopBreakpoint &&
+      MediaQuery.sizeOf(context).width >= mobileBreackpoint;
 
   static bool isMobile(BuildContext context) =>
-      MediaQuery.sizeOf(context).width < 640;
+      MediaQuery.sizeOf(context).width < mobileBreackpoint;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
