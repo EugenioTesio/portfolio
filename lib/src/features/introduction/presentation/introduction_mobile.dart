@@ -21,7 +21,7 @@ class IntroductionMobile extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Wrap(
+        const Wrap(
           children: [
             ProfileImage(
               asset: 'assets/images/profile-image-2-without-bg.png',
