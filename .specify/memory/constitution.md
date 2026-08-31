@@ -1,9 +1,11 @@
 <!--
 Sync Impact Report
-- Version change: (template placeholders) → 1.0.0
-- Modified principles: All five template placeholders replaced with project-specific principles
-- Added sections: Technical Constraints, Development Workflow (from template SECTION_2/SECTION_3)
+- Version change: 1.0.0 → 1.0.1
+- Modified principles: None
+- Added sections: None
 - Removed sections: None
+- Technical Constraints: Runtime pinned to Flutter 3.47.x / Dart ^3.13.0;
+  hosting secrets guidance no longer names unused envied
 - Follow-up TODOs: None
 -->
 
@@ -68,9 +70,9 @@ already validate rendering across breakpoints.
 
 ## Technical Constraints
 
-- **Runtime**: Flutter 3.x stable, Dart SDK `>=3.0.2 <4.0.0` (see `pubspec.yaml`).
+- **Runtime**: Flutter 3.47.x stable, Dart SDK `^3.13.0` (see `pubspec.yaml`).
 - **Hosting**: Firebase Hosting for web deployments; Firebase configuration MUST
-  remain environment-safe (no secrets in source; use `envied` or CI secrets).
+  remain environment-safe (no secrets in source; use CI secrets).
 - **Dependencies**: Prefer well-maintained pub packages; new dependencies MUST
   be justified in the feature plan and kept minimal (YAGNI).
 - **Code style**: Follow `analysis_options.yaml` (package imports, 80-char lines,
@@ -110,4 +112,4 @@ Complexity beyond these rules MUST be justified in the feature plan. Runtime
 development guidance lives in feature specs and plans produced by Spec Kit
 commands.
 
-**Version**: 1.0.0 | **Ratified**: 2026-08-28 | **Last Amended**: 2026-08-28
+**Version**: 1.0.1 | **Ratified**: 2026-08-28 | **Last Amended**: 2026-08-31

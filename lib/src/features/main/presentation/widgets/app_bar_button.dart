@@ -17,10 +17,7 @@ class AppBarButton extends ConsumerWidget {
       child: SizedBox(
         height: 56,
         child: Center(
-          child: Text(
-            title,
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
+          child: Text(title, style: Theme.of(context).textTheme.titleMedium),
         ),
       ),
     );

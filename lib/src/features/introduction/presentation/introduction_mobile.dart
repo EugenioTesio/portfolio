@@ -40,9 +40,7 @@ class IntroductionMobile extends ConsumerWidget {
             Flexible(
               child: AppText(
                 '${context.localized.description} ',
-                style: Theme.of(context)
-                    .textTheme
-                    .titleLarge
+                style: Theme.of(context).textTheme.titleLarge
                     ?.copyWith(fontSize: 20),
               ),
             ),

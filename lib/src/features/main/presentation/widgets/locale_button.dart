@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
+import 'package:portfolio/src/localization/app_localizations.dart';
 import 'package:portfolio/src/localization/localization_provider.dart';
 
-const _languageCode = {
-  'en': 'English',
-  'es': 'Spanish',
-};
+const _languageCode = {'en': 'English', 'es': 'Spanish'};
 
 class LocaleButton extends ConsumerWidget {
   const LocaleButton({super.key});

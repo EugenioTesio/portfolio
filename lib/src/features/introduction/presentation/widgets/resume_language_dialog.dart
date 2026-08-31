@@ -13,9 +13,7 @@ class ResumeLanguageDialog extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return SimpleDialog(
-      title: Center(
-        child: Text(context.localized.downloadResume),
-      ),
+      title: Center(child: Text(context.localized.downloadResume)),
       titlePadding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
       contentPadding: const EdgeInsets.fromLTRB(0, 12, 0, 40),
       children: [
@@ -24,7 +22,7 @@ class ResumeLanguageDialog extends ConsumerWidget {
           return Column(
             children: [
               ResumeLanguageDialogTile(resume: resume),
-              if (index != resumes.length) const Divider(height: 0)
+              if (index != resumes.length) const Divider(height: 0),
             ],
           );
         }),

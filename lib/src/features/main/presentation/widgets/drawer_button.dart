@@ -31,9 +31,8 @@ class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
       cursor: SystemMouseCursors.click,
       onHover: (_) {
         setState(() {
-          titleStyle = Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSecondary,
-              );
+          titleStyle = Theme.of(context).textTheme.headlineMedium
+              ?.copyWith(color: Theme.of(context).colorScheme.onSecondary);
         });
       },
       onExit: (_) {
@@ -43,10 +42,7 @@ class MyDrawerButtonsState extends ConsumerState<MyDrawerButton> {
       },
       child: GestureDetector(
         onTap: () => _onTap(context),
-        child: AppText(
-          widget.title,
-          style: titleStyle,
-        ),
+        child: AppText(widget.title, style: titleStyle),
       ),
     );
   }

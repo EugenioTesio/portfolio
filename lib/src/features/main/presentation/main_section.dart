@@ -55,14 +55,11 @@ class _MainSectionState extends ConsumerState<MainSection> {
           ),
           child: Stack(
             children: [
-              const Responsive(
-                desktop: MainDesktop(),
-                tablet: MainTablet(),
-              ),
+              const Responsive(desktop: MainDesktop(), tablet: MainTablet()),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: BottomBanner(bannerHeight: _bottomBannerHeight),
-              )
+              ),
             ],
           ),
         ),

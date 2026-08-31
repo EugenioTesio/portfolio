@@ -6,19 +6,51 @@ part of 'app_localizations_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$appLocalizationsHash() => r'2c2fb0f2a8ef8313c21f8ffa9d5b6bfa86106cab';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [appLocalizations].
 @ProviderFor(appLocalizations)
-final appLocalizationsProvider = AutoDisposeProvider<AppLocalizations>.internal(
-  appLocalizations,
-  name: r'appLocalizationsProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$appLocalizationsHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final appLocalizationsProvider = AppLocalizationsProvider._();
 
-typedef AppLocalizationsRef = AutoDisposeProviderRef<AppLocalizations>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+final class AppLocalizationsProvider
+    extends
+        $FunctionalProvider<
+          AppLocalizations,
+          AppLocalizations,
+          AppLocalizations
+        >
+    with $Provider<AppLocalizations> {
+  AppLocalizationsProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'appLocalizationsProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$appLocalizationsHash();
+
+  @$internal
+  @override
+  $ProviderElement<AppLocalizations> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  AppLocalizations create(Ref ref) {
+    return appLocalizations(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(AppLocalizations value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<AppLocalizations>(value),
+    );
+  }
+}
+
+String _$appLocalizationsHash() => r'9da83ebf5ffee24bdf25b9ac1430875aec850b9d';

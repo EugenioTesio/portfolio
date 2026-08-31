@@ -6,19 +6,51 @@ part of 'resume_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$resumeRepositoryHash() => r'03adc2e3cfd1345299de9002a2452e7e6a922f24';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [resumeRepository].
 @ProviderFor(resumeRepository)
-final resumeRepositoryProvider = AutoDisposeProvider<ResumeRepository>.internal(
-  resumeRepository,
-  name: r'resumeRepositoryProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$resumeRepositoryHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final resumeRepositoryProvider = ResumeRepositoryProvider._();
 
-typedef ResumeRepositoryRef = AutoDisposeProviderRef<ResumeRepository>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+final class ResumeRepositoryProvider
+    extends
+        $FunctionalProvider<
+          ResumeRepository,
+          ResumeRepository,
+          ResumeRepository
+        >
+    with $Provider<ResumeRepository> {
+  ResumeRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'resumeRepositoryProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$resumeRepositoryHash();
+
+  @$internal
+  @override
+  $ProviderElement<ResumeRepository> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  ResumeRepository create(Ref ref) {
+    return resumeRepository(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(ResumeRepository value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<ResumeRepository>(value),
+    );
+  }
+}
+
+String _$resumeRepositoryHash() => r'6f81cd2ce810532a192cea00b54ea6c7c0024fe6';

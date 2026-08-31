@@ -45,8 +45,8 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
             borderRadius: BorderRadius.circular(20),
             hoverColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
             splashColor: Theme.of(context).colorScheme.tertiary.withAlpha(30),
-            highlightColor:
-                Theme.of(context).colorScheme.tertiary.withAlpha(20),
+            highlightColor: Theme.of(context).colorScheme.tertiary
+                .withAlpha(20),
             child: Padding(
               padding: const EdgeInsets.all(12),
               child: _buildResponsiveProjectCardContent(context),
@@ -76,10 +76,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
           child: ProjectImage(project: widget.project, isHovered: _isHovered),
         ),
         gapW12,
-        Expanded(
-          flex: 10,
-          child: ProjectDescription(project: widget.project),
-        ),
+        Expanded(flex: 10, child: ProjectDescription(project: widget.project)),
       ],
     );
   }

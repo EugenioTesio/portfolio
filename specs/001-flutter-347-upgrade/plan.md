@@ -8,7 +8,7 @@
 
 ## Summary
 
-Bring the portfolio onto **Flutter 3.47.2** (Dart 3.13.2) and move every third-party library to the latest version that resolves on that SDK. Preserve visitor journeys, feature-first layout, Riverpod (migrated 2 → 3), localization, and theming. Replace `url_strategy` with SDK `usePathUrlStrategy`, replace unmaintained `auto_size_text` with `auto_size_text_plus`, and remove unused `envied`. Pin CI and hosting workflows to 3.47.2; update constitution and README runtime docs.
+Bring the portfolio onto **Flutter 3.47.2** (Dart 3.13.2) and move every third-party library to the latest version that resolves on that SDK. Preserve visitor journeys, feature-first layout, Riverpod (migrated 2 → 3), localization, and theming. Replace `url_strategy` with SDK `usePathUrlStrategy`, replace unmaintained `auto_size_text` with `auto_size_text_plus`, and remove unused `envied`. Remove `custom_lint` (Riverpod 3.1.4+ uses `analysis_server_plugin`). Pin transitive `html` to `0.15.5+1` so `flutter_html` 3.0.0 compiles. Pin CI and hosting workflows to 3.47.2; update constitution and README runtime docs.
 
 ## Technical Context
 

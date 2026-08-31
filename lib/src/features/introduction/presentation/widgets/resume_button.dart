@@ -30,7 +30,7 @@ class ResumeButton extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         textBaseline: TextBaseline.alphabetic,
         children: [
-          Icon(
+          FaIcon(
             FontAwesomeIcons.filePdf,
             color: Theme.of(context).colorScheme.secondaryContainer,
           ),
@@ -38,9 +38,9 @@ class ResumeButton extends ConsumerWidget {
           AppText(
             context.localized.resume,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.secondaryContainer,
-                ),
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).colorScheme.secondaryContainer,
+            ),
           ),
         ],
       ),
@@ -58,9 +58,7 @@ class ResumeButton extends ConsumerWidget {
       try {
         await launchUrl(Uri.parse(resumes.first.url));
       } catch (e) {
-        const snackBar = SnackBar(
-          content: Text('Could not open resume'),
-        );
+        const snackBar = SnackBar(content: Text('Could not open resume'));
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(snackBar);
         }
@@ -69,9 +67,7 @@ class ResumeButton extends ConsumerWidget {
         Navigator.of(context).pop();
       }
     } else {
-      const snackBar = SnackBar(
-        content: Text('Could not open resume'),
-      );
+      const snackBar = SnackBar(content: Text('Could not open resume'));
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
       }

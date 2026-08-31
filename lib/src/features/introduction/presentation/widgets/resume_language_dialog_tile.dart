@@ -34,9 +34,7 @@ Future<void> _onPressed(
   try {
     await launchUrl(Uri.parse(resumeUrl));
   } catch (e) {
-    const snackBar = SnackBar(
-      content: Text('Could not open resume'),
-    );
+    const snackBar = SnackBar(content: Text('Could not open resume'));
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     }

@@ -1,12 +1,12 @@
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/src/features/project/domain/project.dart';
+import 'package:portfolio/src/localization/app_localizations.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'project_repository.g.dart';
 
 @riverpod
-ProjectRepository projectRepository(ProjectRepositoryRef ref) {
+ProjectRepository projectRepository(Ref ref) {
   final appLocalizations = ref.watch(appLocalizationsProvider);
   return ProjectRepository(appLocalizations);
 }
@@ -21,10 +21,7 @@ class ProjectRepository {
       Project(
         title: 'Portfolio',
         description: _appLocalizations.portfolioDescription,
-        technologies: [
-          'Flutter',
-          'Dart',
-        ],
+        technologies: ['Flutter', 'Dart'],
         url: 'https://github.com/EugenioTesio/portfolio#readme',
         asset: 'assets/projects/portfolio.png',
       ),
@@ -60,8 +57,7 @@ class ProjectRepository {
           'Crashlytics',
           'Git',
         ],
-        url:
-            'https://play.google.com/store/apps/details?id=ar.com.zetus.collectio',
+        url: 'https://play.google.com/store/apps/details?id=ar.com.zetus.collectio',
         asset: 'assets/projects/collectio.png',
       ),
     ];

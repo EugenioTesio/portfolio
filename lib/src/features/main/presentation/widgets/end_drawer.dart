@@ -17,8 +17,9 @@ class EndDrawer extends ConsumerWidget {
     final isDark = ref.watch(darkModeProvider);
     if (Responsive.isDesktop(context)) return const SizedBox.shrink();
     return Drawer(
-      backgroundColor:
-          isDark ? Colors.black.withAlpha(220) : Colors.white.withAlpha(220),
+      backgroundColor: isDark
+          ? Colors.black.withAlpha(220)
+          : Colors.white.withAlpha(220),
       child: Column(
         children: [
           Align(

@@ -6,73 +6,202 @@ part of 'section_key_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$homeSectionKeyHash() => r'ca5e15d609d6d8f9f774f86c3dd5f9b6eab08501';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [homeSectionKey].
 @ProviderFor(homeSectionKey)
-final homeSectionKeyProvider =
-    AutoDisposeProvider<GlobalKey<State<StatefulWidget>>>.internal(
-  homeSectionKey,
-  name: r'homeSectionKeyProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$homeSectionKeyHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final homeSectionKeyProvider = HomeSectionKeyProvider._();
 
-typedef HomeSectionKeyRef
-    = AutoDisposeProviderRef<GlobalKey<State<StatefulWidget>>>;
-String _$aboutSectionKeyHash() => r'afc3490842cc25b9355325bfc1a06c4564ee4a6e';
+final class HomeSectionKeyProvider
+    extends
+        $FunctionalProvider<
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>
+        >
+    with $Provider<GlobalKey<State<StatefulWidget>>> {
+  HomeSectionKeyProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'homeSectionKeyProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
 
-/// See also [aboutSectionKey].
+  @override
+  String debugGetCreateSourceHash() => _$homeSectionKeyHash();
+
+  @$internal
+  @override
+  $ProviderElement<GlobalKey<State<StatefulWidget>>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  GlobalKey<State<StatefulWidget>> create(Ref ref) {
+    return homeSectionKey(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GlobalKey<State<StatefulWidget>> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GlobalKey<State<StatefulWidget>>>(
+        value,
+      ),
+    );
+  }
+}
+
+String _$homeSectionKeyHash() => r'd56b3e47a2cc874ccbbd299ae7fb856a691e93f0';
+
 @ProviderFor(aboutSectionKey)
-final aboutSectionKeyProvider =
-    AutoDisposeProvider<GlobalKey<State<StatefulWidget>>>.internal(
-  aboutSectionKey,
-  name: r'aboutSectionKeyProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$aboutSectionKeyHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final aboutSectionKeyProvider = AboutSectionKeyProvider._();
 
-typedef AboutSectionKeyRef
-    = AutoDisposeProviderRef<GlobalKey<State<StatefulWidget>>>;
-String _$experienceSectionKeyHash() =>
-    r'a1a404cbe985db4f9fc2c1dccd0834f6be620ae0';
+final class AboutSectionKeyProvider
+    extends
+        $FunctionalProvider<
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>
+        >
+    with $Provider<GlobalKey<State<StatefulWidget>>> {
+  AboutSectionKeyProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'aboutSectionKeyProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
 
-/// See also [experienceSectionKey].
+  @override
+  String debugGetCreateSourceHash() => _$aboutSectionKeyHash();
+
+  @$internal
+  @override
+  $ProviderElement<GlobalKey<State<StatefulWidget>>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  GlobalKey<State<StatefulWidget>> create(Ref ref) {
+    return aboutSectionKey(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GlobalKey<State<StatefulWidget>> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GlobalKey<State<StatefulWidget>>>(
+        value,
+      ),
+    );
+  }
+}
+
+String _$aboutSectionKeyHash() => r'e04467f6d05609fe04b0b415f990533d6a05d4ec';
+
 @ProviderFor(experienceSectionKey)
-final experienceSectionKeyProvider =
-    AutoDisposeProvider<GlobalKey<State<StatefulWidget>>>.internal(
-  experienceSectionKey,
-  name: r'experienceSectionKeyProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$experienceSectionKeyHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final experienceSectionKeyProvider = ExperienceSectionKeyProvider._();
 
-typedef ExperienceSectionKeyRef
-    = AutoDisposeProviderRef<GlobalKey<State<StatefulWidget>>>;
-String _$projectSectionKeyHash() => r'7499fdf7785581c80d3d258d68c35a41553d0e5d';
+final class ExperienceSectionKeyProvider
+    extends
+        $FunctionalProvider<
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>
+        >
+    with $Provider<GlobalKey<State<StatefulWidget>>> {
+  ExperienceSectionKeyProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'experienceSectionKeyProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
 
-/// See also [projectSectionKey].
+  @override
+  String debugGetCreateSourceHash() => _$experienceSectionKeyHash();
+
+  @$internal
+  @override
+  $ProviderElement<GlobalKey<State<StatefulWidget>>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  GlobalKey<State<StatefulWidget>> create(Ref ref) {
+    return experienceSectionKey(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GlobalKey<State<StatefulWidget>> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GlobalKey<State<StatefulWidget>>>(
+        value,
+      ),
+    );
+  }
+}
+
+String _$experienceSectionKeyHash() =>
+    r'7f7ccb4892de7612afc426caef02e562b68c2379';
+
 @ProviderFor(projectSectionKey)
-final projectSectionKeyProvider =
-    AutoDisposeProvider<GlobalKey<State<StatefulWidget>>>.internal(
-  projectSectionKey,
-  name: r'projectSectionKeyProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$projectSectionKeyHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final projectSectionKeyProvider = ProjectSectionKeyProvider._();
 
-typedef ProjectSectionKeyRef
-    = AutoDisposeProviderRef<GlobalKey<State<StatefulWidget>>>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+final class ProjectSectionKeyProvider
+    extends
+        $FunctionalProvider<
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>,
+          GlobalKey<State<StatefulWidget>>
+        >
+    with $Provider<GlobalKey<State<StatefulWidget>>> {
+  ProjectSectionKeyProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'projectSectionKeyProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$projectSectionKeyHash();
+
+  @$internal
+  @override
+  $ProviderElement<GlobalKey<State<StatefulWidget>>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  GlobalKey<State<StatefulWidget>> create(Ref ref) {
+    return projectSectionKey(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GlobalKey<State<StatefulWidget>> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GlobalKey<State<StatefulWidget>>>(
+        value,
+      ),
+    );
+  }
+}
+
+String _$projectSectionKeyHash() => r'784a80cb653f8c5ca93b09b0933c65a1c71955c2';

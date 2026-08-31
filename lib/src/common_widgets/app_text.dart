@@ -1,13 +1,9 @@
-import 'package:auto_size_text/auto_size_text.dart';
+import 'package:auto_size_text_plus/auto_size_text_plus.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:seo/seo.dart';
 
-enum AppTextType {
-  normal,
-  html,
-  autosize,
-}
+enum AppTextType { normal, html, autosize }
 
 final class AppText extends StatelessWidget {
   const AppText(
@@ -30,20 +26,13 @@ final class AppText extends StatelessWidget {
     return Seo.text(
       text: text,
       child: switch (type) {
-        AppTextType.normal => Text(
-            text,
-            maxLines: maxLines,
-            style: style,
-          ),
-        AppTextType.html => Html(
-            data: text,
-            style: htmlStiles ?? {},
-          ),
+        AppTextType.normal => Text(text, maxLines: maxLines, style: style),
+        AppTextType.html => Html(data: text, style: htmlStiles ?? {}),
         AppTextType.autosize => AutoSizeText(
-            text,
-            maxLines: maxLines,
-            style: style,
-          ),
+          text,
+          maxLines: maxLines,
+          style: style,
+        ),
       },
     );
   }
