@@ -7,7 +7,7 @@ class MagicIcon extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Icon(
+    return FaIcon(
       FontAwesomeIcons.wandMagicSparkles,
       color: Theme.of(context).colorScheme.inverseSurface,
     );

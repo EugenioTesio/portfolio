@@ -64,7 +64,7 @@ class _MainTabletState extends ConsumerState<MainTablet> {
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),

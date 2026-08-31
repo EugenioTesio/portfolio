@@ -6,18 +6,56 @@ part of 'dark_mode_controller.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+
+@ProviderFor(DarkMode)
+final darkModeProvider = DarkModeProvider._();
+
+final class DarkModeProvider extends $NotifierProvider<DarkMode, bool> {
+  DarkModeProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'darkModeProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$darkModeHash();
+
+  @$internal
+  @override
+  DarkMode create() => DarkMode();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(bool value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
+  }
+}
+
 String _$darkModeHash() => r'0fb1e4884debdfa55518ce1ff0e71583f8537102';
 
-/// See also [DarkMode].
-@ProviderFor(DarkMode)
-final darkModeProvider = AutoDisposeNotifierProvider<DarkMode, bool>.internal(
-  DarkMode.new,
-  name: r'darkModeProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$darkModeHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef _$DarkMode = AutoDisposeNotifier<bool>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+abstract class _$DarkMode extends $Notifier<bool> {
+  bool build();
+  @$mustCallSuper
+  @override
+  WhenComplete runBuild() {
+    final ref = this.ref as $Ref<bool, bool>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<bool, bool>,
+              bool,
+              Object?,
+              Object?
+            >;
+    return element.handleCreate(ref, build);
+  }
+}

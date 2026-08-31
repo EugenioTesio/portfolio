@@ -54,9 +54,9 @@ class ProjectImage extends ConsumerWidget {
                   curve: Curves.decelerate,
                   transform: isHovered
                       ? (Matrix4.identity()
-                        ..translate(0.5 * width, 0.5 * width)
-                        ..scale(1.2)
-                        ..translate(0.5 * -width, 0.5 * -width))
+                          ..translateByDouble(0.5 * width, 0.5 * width, 0, 1)
+                          ..scaleByDouble(1.2, 1.2, 1.2, 1)
+                          ..translateByDouble(0.5 * -width, 0.5 * -width, 0, 1))
                       : Matrix4.identity(),
                   child: Image.asset(
                     project.asset,
@@ -84,7 +84,7 @@ class ProjectImage extends ConsumerWidget {
               duration: const Duration(seconds: 1),
               reverseDuration: const Duration(milliseconds: 500),
               firstChild: const SizedBox.shrink(),
-              secondChild: const Icon(
+              secondChild: const FaIcon(
                 FontAwesomeIcons.github,
                 color: Colors.white,
                 size: 32,

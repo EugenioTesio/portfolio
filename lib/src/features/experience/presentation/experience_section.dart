@@ -8,8 +8,6 @@ class ExperienceSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Responsive(
-      desktop: ExperienceDesktop(),
-    );
+    return const Responsive(desktop: ExperienceDesktop());
   }
 }

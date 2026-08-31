@@ -5,7 +5,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'contact_repository.g.dart';
 
 @riverpod
-ContactRepository contactRepository(ContactRepositoryRef ref) {
+ContactRepository contactRepository(Ref ref) {
   return ContactRepository();
 }
 

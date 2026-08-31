@@ -8,8 +8,6 @@ class AboutSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Responsive(
-      desktop: AboutDesktop(),
-    );
+    return const Responsive(desktop: AboutDesktop());
   }
 }

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final scrollControllerProvider =
-    NotifierProvider<Scroll, ScrollController>(Scroll.new);
+final scrollControllerProvider = NotifierProvider<Scroll, ScrollController>(
+  Scroll.new,
+);
 
 class Scroll extends Notifier<ScrollController> {
   @override

@@ -2,10 +2,8 @@ import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// Made for FlexColorScheme version 7.0.0. Make sure you
-// use same or higher package version, but still same major version.
-// If you use a lower version, some properties may not be supported.
-// In that case remove them after copying this theme to your app.
+// FlexColorScheme 8.4 — tokens stay here (constitution IV).
+// interactionEffects / tintedDisabledControls default to false in v8.
 
 final lightTheme = FlexThemeData.light(
   colors: const FlexSchemeColor(
@@ -33,8 +31,6 @@ final lightTheme = FlexThemeData.light(
     bodySmall: TextStyle(fontSize: 14),
   ),
   subThemesData: const FlexSubThemesData(
-    interactionEffects: false,
-    tintedDisabledControls: false,
     inputDecoratorBorderType: FlexInputBorderType.underline,
     inputDecoratorUnfocusedBorderIsColored: false,
     chipRadius: 20,
@@ -71,7 +67,6 @@ final lightTheme = FlexThemeData.light(
     keepSecondaryContainer: true,
   ),
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
-  useMaterial3: true,
   swapLegacyOnMaterial3: true,
   // To use the playground font, add GoogleFonts package and uncomment
   // fontFamily: GoogleFonts.notoSans().fontFamily,
@@ -104,8 +99,6 @@ final dartTheme = FlexThemeData.dark(
     bodySmall: TextStyle(fontSize: 14),
   ),
   subThemesData: const FlexSubThemesData(
-    interactionEffects: false,
-    tintedDisabledControls: false,
     inputDecoratorBorderType: FlexInputBorderType.underline,
     inputDecoratorUnfocusedBorderIsColored: false,
     chipRadius: 20,
@@ -142,7 +135,6 @@ final dartTheme = FlexThemeData.dark(
     keepSecondaryContainer: true,
   ),
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
-  useMaterial3: true,
   swapLegacyOnMaterial3: true,
   // To use the Playground font, add GoogleFonts package and uncomment
   // fontFamily: GoogleFonts.notoSans().fontFamily,

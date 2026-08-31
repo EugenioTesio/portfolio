@@ -8,8 +8,6 @@ class ProjectSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Responsive(
-      desktop: ProjectDesktop(),
-    );
+    return const Responsive(desktop: ProjectDesktop());
   }
 }

@@ -20,9 +20,7 @@ class ProjectDescription extends ConsumerWidget {
             Flexible(
               child: AppText(
                 '${project.title} ',
-                style: Theme.of(context)
-                    .textTheme
-                    .titleMedium
+                style: Theme.of(context).textTheme.titleMedium
                     ?.copyWith(fontWeight: FontWeight.bold),
               ),
             ),

@@ -12,8 +12,9 @@ class ExperienceDesktop extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final experiences =
-        ref.watch(experienceRepositoryProvider).fetchExperiences();
+    final experiences = ref
+        .watch(experienceRepositoryProvider)
+        .fetchExperiences();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,8 +24,8 @@ class ExperienceDesktop extends ConsumerWidget {
           child: AppText(
             context.localized.experienceSectionTitle,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: Theme.of(context).colorScheme.secondaryContainer,
-                ),
+              color: Theme.of(context).colorScheme.secondaryContainer,
+            ),
           ),
         ),
         ...experiences.mapIndexed((index, experience) {

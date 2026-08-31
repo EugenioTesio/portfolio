@@ -6,20 +6,52 @@ part of 'contact_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$contactRepositoryHash() => r'f23fb77a32c1820482164c86bfe3ccb65ce6475a';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [contactRepository].
 @ProviderFor(contactRepository)
-final contactRepositoryProvider =
-    AutoDisposeProvider<ContactRepository>.internal(
-  contactRepository,
-  name: r'contactRepositoryProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$contactRepositoryHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final contactRepositoryProvider = ContactRepositoryProvider._();
 
-typedef ContactRepositoryRef = AutoDisposeProviderRef<ContactRepository>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+final class ContactRepositoryProvider
+    extends
+        $FunctionalProvider<
+          ContactRepository,
+          ContactRepository,
+          ContactRepository
+        >
+    with $Provider<ContactRepository> {
+  ContactRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'contactRepositoryProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$contactRepositoryHash();
+
+  @$internal
+  @override
+  $ProviderElement<ContactRepository> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  ContactRepository create(Ref ref) {
+    return contactRepository(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(ContactRepository value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<ContactRepository>(value),
+    );
+  }
+}
+
+String _$contactRepositoryHash() => r'b80db8a10aeb548cee2990ad88da3cd87e7f78ce';

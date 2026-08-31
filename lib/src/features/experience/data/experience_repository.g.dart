@@ -6,21 +6,53 @@ part of 'experience_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$experienceRepositoryHash() =>
-    r'd4ca711d738d2c07b9d100993cbc7281172c32ca';
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
 
-/// See also [experienceRepository].
 @ProviderFor(experienceRepository)
-final experienceRepositoryProvider =
-    AutoDisposeProvider<ExperienceRepository>.internal(
-  experienceRepository,
-  name: r'experienceRepositoryProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$experienceRepositoryHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+final experienceRepositoryProvider = ExperienceRepositoryProvider._();
 
-typedef ExperienceRepositoryRef = AutoDisposeProviderRef<ExperienceRepository>;
-// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions
+final class ExperienceRepositoryProvider
+    extends
+        $FunctionalProvider<
+          ExperienceRepository,
+          ExperienceRepository,
+          ExperienceRepository
+        >
+    with $Provider<ExperienceRepository> {
+  ExperienceRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'experienceRepositoryProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$experienceRepositoryHash();
+
+  @$internal
+  @override
+  $ProviderElement<ExperienceRepository> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  ExperienceRepository create(Ref ref) {
+    return experienceRepository(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(ExperienceRepository value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<ExperienceRepository>(value),
+    );
+  }
+}
+
+String _$experienceRepositoryHash() =>
+    r'd5c73c61d1dde12298ff4e08ba767b10484c9528';

@@ -7,10 +7,7 @@ class MySliverAppBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return SliverPersistentHeader(
-      delegate: _AppBarDelegate(),
-      floating: true,
-    );
+    return SliverPersistentHeader(delegate: _AppBarDelegate(), floating: true);
   }
 }
 

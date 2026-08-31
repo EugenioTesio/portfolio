@@ -37,9 +37,7 @@ class ExperienceCard extends ConsumerWidget {
                     Flexible(
                       child: AppText(
                         experience.job,
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleMedium
+                        style: Theme.of(context).textTheme.titleMedium
                             ?.copyWith(fontWeight: FontWeight.bold),
                       ),
                     ),
@@ -57,12 +55,12 @@ class ExperienceCard extends ConsumerWidget {
                     children: [
                       AppText(
                         experience.company,
-                        style:
-                            Theme.of(context).textTheme.titleMedium?.copyWith(
-                                  color: Theme.of(context)
-                                      .colorScheme
-                                      .secondaryContainer,
-                                ),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .secondaryContainer,
+                            ),
                       ),
                       gapH4,
                       AppText(
@@ -75,18 +73,13 @@ class ExperienceCard extends ConsumerWidget {
                   AppText(
                     experience.company,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          color:
-                              Theme.of(context).colorScheme.secondaryContainer,
-                        ),
+                      color: Theme.of(context).colorScheme.secondaryContainer,
+                    ),
                   ),
                 gapH8,
                 Row(
                   children: [
-                    Expanded(
-                      child: Html(
-                        data: experience.description,
-                      ),
-                    ),
+                    Expanded(child: Html(data: experience.description)),
                   ],
                 ),
                 gapH12,
@@ -112,18 +105,13 @@ class ExperienceCard extends ConsumerWidget {
       spacing: 8,
       runSpacing: 8,
       children: experience.technologies!.map((technology) {
-        return IgnorePointer(
-          child: TechnologyChip(name: technology),
-        );
+        return IgnorePointer(child: TechnologyChip(name: technology));
       }).toList(),
     );
   }
 
   Widget _buildLinks(BuildContext context) {
     if (experience.url == null) return const SizedBox.shrink();
-    return Link(
-      url: experience.url!,
-      displayLeadingIcon: true,
-    );
+    return Link(url: experience.url!, displayLeadingIcon: true);
   }
 }

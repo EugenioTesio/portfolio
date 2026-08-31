@@ -1,12 +1,12 @@
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
+import 'package:portfolio/src/localization/app_localizations.dart';
 import 'package:portfolio/src/localization/app_localizations_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'experience_repository.g.dart';
 
 @riverpod
-ExperienceRepository experienceRepository(ExperienceRepositoryRef ref) {
+ExperienceRepository experienceRepository(Ref ref) {
   final appLocalizations = ref.watch(appLocalizationsProvider);
   return ExperienceRepository(appLocalizations);
 }
@@ -35,7 +35,7 @@ class ExperienceRepository {
           'Python',
           'PostgreSQL',
           'SqlAlchemy',
-          'Docker'
+          'Docker',
         ],
       ),
       Experience(
@@ -52,7 +52,7 @@ class ExperienceRepository {
           'TypeScript',
           'TypeORM',
           'MySQL',
-          'Docker'
+          'Docker',
         ],
       ),
       Experience(
@@ -94,7 +94,7 @@ class ExperienceRepository {
           'Google Pub/Sub',
           'Google Logging',
           'MySQL',
-          'Docker'
+          'Docker',
         ],
       ),
     ];

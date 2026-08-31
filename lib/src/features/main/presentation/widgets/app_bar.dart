@@ -18,12 +18,11 @@ class MyAppBar extends ConsumerWidget {
       scrolledUnderElevation: 0,
       backgroundColor: Theme.of(context).colorScheme.tertiary.withAlpha(40),
       centerTitle: false,
-      titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+      titleTextStyle: Theme.of(context).textTheme.titleLarge
+          ?.copyWith(fontWeight: FontWeight.bold),
       title: const Row(
         children: [
-          Icon(FontAwesomeIcons.terminal),
+          FaIcon(FontAwesomeIcons.terminal),
           SizedBox(width: 12),
           Text('Portfolio'),
         ],
@@ -48,8 +47,9 @@ class MyAppBar extends ConsumerWidget {
               AppBarButton(
                 title: context.localized.experienceSectionTitle,
                 onPressed: () {
-                  final experienceSectionKey =
-                      ref.watch(experienceSectionKeyProvider);
+                  final experienceSectionKey = ref.watch(
+                    experienceSectionKeyProvider,
+                  );
                   if (experienceSectionKey.currentContext != null) {
                     Scrollable.ensureVisible(
                       experienceSectionKey.currentContext!,
@@ -62,8 +62,9 @@ class MyAppBar extends ConsumerWidget {
               AppBarButton(
                 title: context.localized.projectsSectionTitle,
                 onPressed: () {
-                  final projectSectionKey =
-                      ref.watch(projectSectionKeyProvider);
+                  final projectSectionKey = ref.watch(
+                    projectSectionKeyProvider,
+                  );
                   if (projectSectionKey.currentContext != null) {
                     Scrollable.ensureVisible(
                       projectSectionKey.currentContext!,

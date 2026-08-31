@@ -25,14 +25,14 @@ class ContactBar extends ConsumerWidget {
               }
             }
           },
-          icon: Icon(contact.icon),
+          icon: FaIcon(contact.icon),
           padding: _fixGithubIconPadding(contact.icon),
         );
       }).toList(),
     );
   }
 
-  EdgeInsetsGeometry? _fixGithubIconPadding(IconData iconData) {
+  EdgeInsetsGeometry? _fixGithubIconPadding(FaIconData iconData) {
     if (iconData != FontAwesomeIcons.discord) return null;
     return const EdgeInsets.only(right: 6);
   }

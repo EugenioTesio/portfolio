@@ -55,12 +55,11 @@ class _LinksState extends ConsumerState<Link> {
       },
       child: GestureDetector(
         onTap: () async {
+          final messenger = ScaffoldMessenger.of(context);
           if (!await launchUrl(Uri.parse(widget.url))) {
-            final snackBar = SnackBar(
-              content: Text('Could not launch ${widget.url}'),
+            messenger.showSnackBar(
+              SnackBar(content: Text('Could not launch ${widget.url}')),
             );
-            if (!mounted) return;
-            ScaffoldMessenger.of(context).showSnackBar(snackBar);
           }
         },
         child: Row(
@@ -69,18 +68,12 @@ class _LinksState extends ConsumerState<Link> {
             if (widget.displayLeadingIcon)
               Row(
                 children: [
-                  Icon(
-                    Icons.link,
-                    color: _linkStyle?.color,
-                  ),
+                  Icon(Icons.link, color: _linkStyle?.color),
                   gapW4,
                 ],
               ),
             Flexible(
-              child: Text(
-                widget.displayLink ?? widget.url,
-                style: _linkStyle,
-              ),
+              child: Text(widget.displayLink ?? widget.url, style: _linkStyle),
             ),
           ],
         ),

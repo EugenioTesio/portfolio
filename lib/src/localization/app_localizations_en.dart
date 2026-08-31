@@ -1,0 +1,97 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for English (`en`).
+class AppLocalizationsEn extends AppLocalizations {
+  AppLocalizationsEn([String locale = 'en']) : super(locale);
+
+  @override
+  String get name => 'Eugenio Tesio';
+
+  @override
+  String get homeSectionTitle => 'Home';
+
+  @override
+  String get aboutSectionTitle => 'About';
+
+  @override
+  String get aboutSectionTitleAlt => 'About Me';
+
+  @override
+  String get experienceSectionTitle => 'Experience';
+
+  @override
+  String get projectsSectionTitle => 'Projects';
+
+  @override
+  String get englishLanguage => 'English';
+
+  @override
+  String get spanishLanguage => 'French';
+
+  @override
+  String get resume => 'Resume';
+
+  @override
+  String get downloadResume => 'Download resume';
+
+  @override
+  String get resumePresent => 'Present';
+
+  @override
+  String get description => 'Passionate Software Developer';
+
+  @override
+  String get subDescription => 'Senior Flutter and Python Enthusiast';
+
+  @override
+  String get about =>
+      'Hello! I\'m Eugenio Tesio, highly experienced Flutter Developer with 5+ year\'s expertise in designing and developing comprehensive applications using Java, Spring Boot, Python, and the Flutter framework. Skilled in leveraging powerful architecture patterns to create impressive software products that meet customer needs. Passionate about creating impactful solutions by optimizing complex technical solutions for businesses to achieve their objectives. Looking for innovative Python/Flutter projects where I can combine my strongest knowledge.';
+
+  @override
+  String get portfolioDescription =>
+      'Yes, it\'s THIS portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.';
+
+  @override
+  String get credit => 'Design inspired by';
+
+  @override
+  String get pairtreeDevJobTitle => 'Full Stack Developer';
+
+  @override
+  String get pairtreeDevJobDescription =>
+      '<ul> <li>Developed applications using Flutter and BLoC architecture.</li> <li>Used GitHub Actions for testing and deployment.</li> <li>Performed unit, widget, and integration testing.</li> <li>Implemented golden testing for UI development.</li> <li>Assisted in Python backend development using FastAPI.</li> <li>Utilized SQLAlchemy and Alembic migrations for database operations.</li> <li>Achieved 100% code coverage for all tests in Python Backend.</li> <li>Utilized fixtures to create test data for functional and regression tests.</li> <li>Modified existing test cases to improve coverage and accuracy.</li> <li>Worked with developers to troubleshoot and resolve software issues.</li> <li>Developed and improved CI/CD pipelines.</li> <li>Identified and tracked issues with Sentry.</li> </ul>';
+
+  @override
+  String get tandamosDevJobTitle => 'Full Stack Developer';
+
+  @override
+  String get tandamosDevJobDescription =>
+      '<ul> <li>Developed a customer-facing mobile application using Flutter.</li> <li>Enhanced existing backend services built with Next.js using TypeScript.</li> <li>Developed a TypeORM framework to manage data access from a MySQL database.</li> <li>Utilized the Riverpod state management library to store and manage application state.</li> <li>Developed custom reusable UI components using Flutter.</li> <li>Developed automated unit, widget, and integration tests to ensure application stability.</li> <li>Developed reusable functions in Node.js to reduce code redundancy.</li> <li>Utilized Firebase for authentication, authorization, and data synchronization.</li> </ul>';
+
+  @override
+  String get valtechDevJobTitle => 'Backend Developer';
+
+  @override
+  String get valtechDevJobDescription =>
+      '<ul> <li>Developed a Java Spring Boot app that allowed other internal services to send emails using Google Pub/Sub</li> <li>The service used Oracle Responsys to enable the delivery of emails Improved reliability and scalability of the email delivery system.</li> <li>Created unit and integration tests to ensure the app met the requirements.</li> <li>Investigated and resolved any bugs or errors encountered</li> <li>Developed RESTful APIs to enable the app to communicate with other services.</li> <li>Collaborated with other developers and stakeholders to ensure success.</li> <li>Managed the development of the app through its full life cycle.</li> <li>Identified and deployed new tools to improve the app functionality.</li> <li>Resolved conflicts between the app and third-party services.</li> </ul>';
+
+  @override
+  String get freelanceDevJobTitle => 'Full Stack Developer';
+
+  @override
+  String get freelanceDevJobDescription =>
+      '<ul> <li> Worked on web and mobile applications using Flutter with State Management such as Provider, BloC, Riverpod, GetX. Unit Test, Widget test, Golden test, and integration test. </li> <li>Developed software applications with Java using SpringBoot implementing Spring Web, Hibernate, Spring Data JPA, Spring Security, OAuth2 Client, Spring JDBC, Spring. Data MongoDB, WebSockets, Spring Messaging, Scheduler, Spring Cache, Spring Boot Actuator, Swagger, GCP Storage, and GCP Messaging.</li> <li>Developed Python back-end components using Flask or FastAPI, WebSockets, SqlAlchemy, and REST API with Asyncio coroutine manager, Base Model (pydantic)</li> <li>Developed automatic&nbsp;database migration in Python backends&nbsp;with Alembic from SqlAlchemy.</li> <li>Deployed mobile applications in Google PlayStore and AppStore without being rejected.</li> <li>Performed DevOps operations in Google Cloud such as CI/CD using Cloud Run, Cloud App Engine Flexible Environment, Cloud Build, Cloud Artifacts</li> <li>Worked on modularization, creating multiple packages.</li> <li>Worked with Firebase as a back-end platform, and with Google and Facebook for authentication</li> <li>Worked with Firestore NoSQL database, Google Storage, Google Functions, Google Pub/Sub, and Remote Config.</li> <li>Performed Firebase full-text search Elastic Search.</li> <li>Used Google Analytics, Crashlytics, and Sentry for bugs and metrics follow-up.</li> <li>Worked with OCPP 1.6 (Open Charge Point Protocol), the vehicle electrical charger connection protocol.</li> <li>Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors.</li> <li>Discussed project progress with customers, collected feedback on different stages, and directly addressed concerns.</li> <li>Gathered and defined customer requirements to develop clear specifications for project plans</li> <li>Orchestrated efficient large-scale software deployments, including testing features and correcting code.</li> <li>Designed and documented systems based on the results of the analysis.</li> <li>Developed databases, programs, and processes for integration and implementation across the enterprise.</li> <li>Trained new developers and programmers on company standards for design and review.</li> <li>Reviewed user requirements, analyzed, designed, implemented, installed, and delivered training for new applications.</li> </ul>';
+
+  @override
+  String get vulleticProjectDescription =>
+      'The purpose of the solution built is to integrate Electric Vehicle Charger with an online platform that manages them. The mobile application built in Flutter with GetX as the state management package connects the users with the Electric Vehicle Charger in order to charge their vehicles allowing them to pay through the platform. The web application built in Nuxt allows the Electric Vehicle Charger owner to manage them and get all the information they need. The chargers are connected in real-time using WebSocket connection with the backend built in Python. The platform and the mobile app was developed for the company Vulletic, which is the electrical vehicles chargers provider.';
+
+  @override
+  String get collectioProjectDescriptionHtml =>
+      'The purpose of the application is to facilitate monthly membership collection. It was builded thinking on how to help associations and clubs that collect the monthly membership manually with a collector person. With this application they can automate invoice delivery, remind users about which ones are still pending and help the collector to not miss anyone or repeat someone. The application is built in Flutter with the GetX framework. It uses Firebase as the authentication platform and Firestore as the real-time database';
+}
