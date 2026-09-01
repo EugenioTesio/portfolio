@@ -5,6 +5,7 @@ class Experience {
     required this.job,
     required this.company,
     required this.description,
+    this.companyContext,
     this.technologies,
     this.url,
   });
@@ -12,6 +13,7 @@ class Experience {
   final String endDate;
   final String job;
   final String company;
+  final String? companyContext;
   final String description;
   final List<String>? technologies;
   final String? url;

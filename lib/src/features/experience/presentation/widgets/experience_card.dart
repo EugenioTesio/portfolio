@@ -6,6 +6,7 @@ import 'package:portfolio/src/common_widgets/link.dart';
 import 'package:portfolio/src/common_widgets/responsive.dart';
 import 'package:portfolio/src/common_widgets/technology_chip.dart';
 import 'package:portfolio/src/constants/sizes.dart';
+import 'package:portfolio/src/constants/theme.dart';
 import 'package:portfolio/src/features/experience/domain/experience.dart';
 
 class ExperienceCard extends ConsumerWidget {
@@ -53,15 +54,7 @@ class ExperienceCard extends ConsumerWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      AppText(
-                        experience.company,
-                        style: Theme.of(context).textTheme.titleMedium
-                            ?.copyWith(
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .secondaryContainer,
-                            ),
-                      ),
+                      _companyName(context),
                       gapH4,
                       AppText(
                         '${experience.startDate} - ${experience.endDate}',
@@ -70,16 +63,16 @@ class ExperienceCard extends ConsumerWidget {
                     ],
                   )
                 else
-                  AppText(
-                    experience.company,
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.secondaryContainer,
-                    ),
-                  ),
+                  _companyName(context),
                 gapH8,
                 Row(
                   children: [
-                    Expanded(child: Html(data: experience.description)),
+                    Expanded(
+                      child: Html(
+                        data: experience.description,
+                        style: _descriptionStyles(context),
+                      ),
+                    ),
                   ],
                 ),
                 gapH12,
@@ -97,6 +90,38 @@ class ExperienceCard extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  Widget _companyName(BuildContext context) {
+    final style = Theme.of(context).textTheme.titleMedium
+        ?.copyWith(color: Theme.of(context).colorScheme.secondaryContainer);
+    final contextLabel = experience.companyContext;
+    if (contextLabel == null) {
+      return AppText(experience.company, style: style);
+    }
+    return Text.rich(
+      TextSpan(
+        style: style,
+        children: [
+          TextSpan(text: experience.company),
+          TextSpan(
+            text: ' | $contextLabel',
+            style: const TextStyle(fontStyle: FontStyle.italic),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Map<String, Style> _descriptionStyles(BuildContext context) {
+    final emphasis = Theme.of(context).extension<HighlightColors>()!.emphasis;
+    return {
+      'body': Style(margin: Margins.zero, padding: HtmlPaddings.zero),
+      'ul': Style(margin: Margins.zero, padding: HtmlPaddings.only(left: 20)),
+      'li': Style(margin: Margins.only(bottom: 8)),
+      'strong': Style(fontWeight: FontWeight.bold, color: emphasis),
+      'b': Style(fontWeight: FontWeight.bold, color: emphasis),
+    };
   }
 
   Widget _buildChips(BuildContext context) {
